@@ -1,54 +1,35 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Salient
 
-## 🚀 Quick start
+Salient is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
 
-1.  **Create a Gatsby site.**
+## Getting started
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+To get started with this template, first install the npm dependencies:
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+```bash
+npm install
+```
 
-2.  **Start developing.**
+Next, run the development server:
 
-    Navigate into your new site’s directory and start it up.
+```bash
+npm run dev
+```
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
 
-3.  **Open the code and start customizing!**
+## Customizing
 
-    Your site is now running at http://localhost:8000!
+You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+## License
 
-4.  **Learn more**
+This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## Learn more
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+To learn more about the technologies used in this site template, see the following resources:
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
+- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
+- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
