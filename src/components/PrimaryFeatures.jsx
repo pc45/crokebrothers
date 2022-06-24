@@ -4,7 +4,7 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-features.jpg'
+
 import screenshotExpenses from '@/images/screenshots/one.jpg'
 import screenshotPayroll from '@/images/screenshots/two.jpg'
 import screenshotReporting from '@/images/screenshots/three.jpg'
@@ -59,18 +59,9 @@ export function PrimaryFeatures() {
     <section
       id="features"
       aria-labelledby="features-title"
-      className="relative overflow-hidden bg-blue-600 pt-20 pb-28 sm:py-32"
+      className="relative overflow-hidden bg-red-600 pt-20 pb-28 sm:py-32"
     >
-      <div className="absolute top-1/2 left-1/2 -translate-x-[44%] -translate-y-[42%]">
-        <Image
-          src={backgroundImage}
-          alt=""
-          width={2245}
-          height={1636}
-          layout="fixed"
-          unoptimized
-        />
-      </div>
+
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2
@@ -91,7 +82,7 @@ export function PrimaryFeatures() {
           {({ selectedIndex }) => (
             <>
               <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-5">
-                <Tab.List className="relative z-10 flex space-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:space-y-1 lg:space-x-0 lg:whitespace-normal">
+                <Tab.List className="relative z-10 flex space-x-2 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:space-y-1 lg:space-x-0 lg:whitespace-normal">
                   {features.map((feature, featureIndex) => (
                     <div
                       key={feature.title}
