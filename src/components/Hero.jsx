@@ -21,7 +21,7 @@ export function Hero() {
         Company
       </h1>
       <h3 className=" text-2xl mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        Building on two decades of advising government, university, and nonprofit leaders
+        Building on two decades of service to government, university, and nonprofit leaders
       </h3>
       <div className="mt-10 flex justify-center space-x-6">
         <ButtonLink href="/register">Call to Action</ButtonLink>

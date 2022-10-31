@@ -26,13 +26,6 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#clients">
-                  <a className="rounded-lg px-2 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
-                    Clients
-                  </a>
-                </Link>
-              </li>
-              <li>
                 <Link href="#about">
                   <a className="rounded-lg px-2 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
                     About
