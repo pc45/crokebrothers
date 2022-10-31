@@ -7,33 +7,26 @@ import { Container } from '@/components/Container'
 
 import screenshotExpenses from '@/images/screenshots/one.jpg'
 import screenshotPayroll from '@/images/screenshots/two.jpg'
-import screenshotReporting from '@/images/screenshots/three.jpg'
 import screenshotVatReturns from '@/images/screenshots/four.jpg'
 
 const features = [
   {
-    title: 'item 1',
+    title: 'Strategic & Crisis Communication',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, tempora?",
     image: screenshotPayroll,
   },
   {
-    title: 'item 2',
+    title: 'Video Production',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, tempora?",
     image: screenshotExpenses,
   },
   {
-    title: 'item 3',
+    title: 'Web (Development & Design)',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, tempora?",
     image: screenshotVatReturns,
-  },
-  {
-    title: 'item 4',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, tempora?',
-    image: screenshotReporting,
   },
 ]
 
@@ -57,22 +50,22 @@ export function PrimaryFeatures() {
 
   return (
     <section
-      id="features"
-      aria-labelledby="features-title"
+      id="services"
+      aria-labelledby="services-title"
       className="relative overflow-hidden bg-red-600 pt-20 pb-28 sm:py-32"
     >
 
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2
-            id="features-title"
+            id="services-title"
             className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl"
           >
-            Lorem ipsum dolor sit amet, consectetur.
+            Services
           </h2>
-          <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium commodi itaque labore perspiciatis quae, sequi.
-          </p>
+          <h3 className="mt-6 font-2xl text-lg tracking-tight text-blue-100">
+            Along with some of my smartest, most talented friends and my brother Pete — Croke &amp; Co. will offer three core services:
+          </h3>
         </div>
         <Tab.Group
           as="div"

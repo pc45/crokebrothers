@@ -110,39 +110,39 @@ export function Header() {
               </Link>
             </li>
             <li className="ml-12 hidden md:block">
-              <Link href="#features">
+              <Link href="#services">
                 <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
-                  Features
+                  Services
+                </a>
+              </Link>
+            </li>
+            <li className="ml-6 hidden md:block">
+              <Link href="#portfolio">
+                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                  Portfolio
+                </a>
+              </Link>
+            </li>
+            <li className="ml-6 hidden md:block">
+              <Link href="#clients">
+                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                  Clients
                 </a>
               </Link>
             </li>
             <li className="ml-6 hidden md:block">
               <Link href="#testimonials">
                 <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
-                  Testimonials
-                </a>
-              </Link>
-            </li>
-            <li className="ml-6 hidden md:block">
-              <Link href="#pricing">
-                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
-                  Pricing
+                  About
                 </a>
               </Link>
             </li>
             <li className="ml-auto hidden md:block">
-              <Link href="/login">
-                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
-                  Sign in
+              <Link href="#contact">
+                <a className="rounded-lg bg-red-500 p-16 text-white font-bold py-1 px-2 hover:700 hover:text-black">
+                  Contact Us
                 </a>
               </Link>
-            </li>
-            <li className="ml-auto md:ml-8">
-              <ButtonLink href="/register" color="red">
-                <span>
-                  Get started<span className="hidden lg:inline"> today</span>
-                </span>
-              </ButtonLink>
             </li>
             <li className="ml-5 -mr-1 md:hidden">
               <MobileNavigation />

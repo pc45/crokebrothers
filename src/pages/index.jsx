@@ -1,20 +1,19 @@
 import Head from 'next/head'
 
 import { CallToAction } from '@/components/CallToAction'
-import { Faqs } from '@/components/Faqs'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
-import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
-import { Testimonials } from '@/components/Testimonials'
+import { Clients } from "@/components/Clients";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Croke Brothers</title>
+        <title>Croke &amp; Co</title>
         <meta
           name="description"
           content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aut beatae eum libero pariatur suscipit voluptas! Praesentium, sunt voluptate?"
@@ -25,10 +24,9 @@ export default function Home() {
         <Hero />
         <PrimaryFeatures />
         <SecondaryFeatures />
+        <Clients />
         <CallToAction />
-        <Testimonials />
-        <Pricing />
-        <Faqs />
+        <Contact />
       </main>
       <Footer />
     </>

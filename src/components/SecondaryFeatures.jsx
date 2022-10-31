@@ -10,11 +10,12 @@ import screenshotProfitLoss from '@/images/screenshots/seven.jpg'
 
 const features = [
   {
-    name: 'Something',
+    name: 'Project 1',
     summary: 'Adipisicing elit. Laboriosam, reiciendis.',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda at beatae distinctio dolorem est exercitationem, explicabo fuga fugit iure, nam neque nulla officia praesentium quam similique sunt, tempora voluptatibus?',
     image: screenshotProfitLoss,
+    text: 'blablabla',
     icon: function ReportingIcon() {
       let id = useId()
       return (
@@ -44,12 +45,13 @@ const features = [
     },
   },
   {
-    name: 'More Stuff',
+    name: 'Project 2',
     summary:
       'Dolor sit amet, consectetur adipisicing.',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur autem consequatur debitis deleniti dolore excepturi iste modi perferendis sequi tempore. Ab adipisci ea illum nemo quidem quod velit. Eius, nostrum.',
     image: screenshotInventory,
+    text: 'blablabla2',
     icon: function InventoryIcon() {
       return (
         <>
@@ -72,12 +74,13 @@ const features = [
     },
   },
   {
-    name: 'Another thing',
+    name: 'Project 3',
     summary:
       'Lorem ipsum dolor sit amet.',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet fuga fugiat hic iste labore quibusdam reprehenderit velit.',
     image: screenshotContacts,
+    text: 'blablabla3',
     icon: function ContactsIcon() {
       return (
         <>
@@ -190,12 +193,8 @@ function FeaturesDesktop() {
                   aria-hidden={featureIndex !== selectedIndex}
                 >
                   <div className="relative aspect-[844/428] w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-                    <Image
-                      src={feature.image}
-                      alt=""
-                      layout="fill"
-                      sizes="52.75rem"
-                    />
+                    { feature.text }
+
                   </div>
                 </Tab.Panel>
               ))}
@@ -211,20 +210,20 @@ function FeaturesDesktop() {
 export function SecondaryFeatures() {
   return (
     <section
-      id="secondary-features"
-      aria-labelledby="secondary-features-title"
+      id="portfolio"
+      aria-labelledby="portfolio-title"
       className="pt-20 pb-14 sm:pb-20 sm:pt-32 lg:pb-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2
-            id="secondary-features-title"
+            id="portfolio-title"
             className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl"
           >
-            Lorem ipsum dolor sit.
+            Portfolio
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id iste sint totam! At corporis distinctio provident sit?
+            Some case studies on recent projects we've had the pleasure of working on
           </p>
         </div>
         <FeaturesMobile />
