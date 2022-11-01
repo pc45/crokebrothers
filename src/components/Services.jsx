@@ -18,7 +18,7 @@ const features = [
   },
   {
     name: 'Web Development & Design',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description: 'Turn your ideas into reality. From initial concept through product launch, we\'re there to lead the way.',
     icon: ComputerDesktopIcon,
   },
 ]
@@ -31,10 +31,10 @@ export default function Services() {
           className="bg-croke-400 pt-20 pb-14 sm:pb-20 sm:pt-32 lg:pb-32"
       >
         <Container>
-          <div className="relative bg-white py-16 sm:py-24 lg:py-32">
-        <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+          <div className="relative bg-white py-8 sm:py-12 lg:py-16">
+            <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
           <h2 className="text-lg font-semibold text-croke-100">Experience Matters</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-croke sm:text-4xl">
+          <p className="font-display text-3xl tracking-tight text-croke sm:text-4xl">
             Services
           </p>
           <p className="mx-auto mt-5 max-w-prose text-xl text-slate-700">

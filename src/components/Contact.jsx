@@ -9,12 +9,10 @@ export default function Contact() {
       >
         <Container>
           <div className="mx-auto max-w-2xl md:text-center">
-            <h2
-                id="portfolio-title"
-                className="font-display text-3xl tracking-tight text-white sm:text-4xl"
-            >
-              Let's Do Something Great Together!
-            </h2>
+            <h2 className="text-lg font-semibold text-croke-100">Get Started</h2>
+            <p className="font-display text-3xl tracking-tight text-white sm:text-4xl">
+              Let's do something great together!
+            </p>
 
             <form className="space-y-8 divide-y divide-white">
               <div className="space-y-8 divide-y divide-white">

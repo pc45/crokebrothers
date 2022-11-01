@@ -1,13 +1,5 @@
-import Image from 'next/image'
-
 import { ButtonLink } from '@/components/Button'
 import { Container } from '@/components/Container'
-import logoLaravel from '@/images/logos/laravel.svg'
-import logoMirage from '@/images/logos/mirage.svg'
-import logoStatamic from '@/images/logos/statamic.svg'
-import logoStaticKit from '@/images/logos/statickit.svg'
-import logoTransistor from '@/images/logos/transistor.svg'
-import logoTuple from '@/images/logos/tuple.svg'
 
 export function Hero() {
   return (
@@ -24,7 +16,7 @@ export function Hero() {
         Building on two decades of service to government, university, and nonprofit leaders
       </h3>
       <div className="mt-10 flex justify-center space-x-6">
-        <ButtonLink href="/register" className="bg-croke-300">Call to Action</ButtonLink>
+        <ButtonLink href="#contact" className="bg-croke-300">Partner with us</ButtonLink>
         <ButtonLink
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           variant="outline"

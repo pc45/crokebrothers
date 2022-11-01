@@ -90,7 +90,7 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="py-10">
+    <header className="py-4 bg-croke">
       <Container>
         <nav className="relative z-50 text-sm flex">
           <ul className="flex items-center">
@@ -104,21 +104,21 @@ export function Header() {
             </li>
             <li className="ml-12 hidden md:block">
               <Link href="#services">
-                <a className="rounded-lg py-1 px-2 text-croke-400 hover:bg-croke-200 hover:text-slate-900">
+                <a className="font-display tracking-widest font-bold text-lg rounded-lg py-1 px-2 text-white hover:bg-croke-200 hover:text-slate-900">
                   Services
                 </a>
               </Link>
             </li>
             <li className="ml-6 hidden md:block">
               <Link href="#about">
-                <a className="rounded-lg py-1 px-2 text-croke-400 hover:bg-croke-200 hover:text-slate-900">
+                <a className="font-display tracking-widest font-bold text-lg rounded-lg py-1 px-2 text-white hover:bg-croke-200 hover:text-slate-900">
                   About
                 </a>
               </Link>
             </li>
             <li className="ml-6 hidden md:block">
               <Link href="#contact">
-                <a className="rounded-lg py-1 px-2 text-croke-400 hover:bg-croke-200 hover:text-slate-900">
+                <a className="font-display tracking-widest font-bold text-lg rounded-lg py-1 px-2 text-white hover:bg-croke-200 hover:text-slate-900">
                   Contact Us
                 </a>
               </Link>
