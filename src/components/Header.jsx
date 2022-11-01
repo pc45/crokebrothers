@@ -92,33 +92,33 @@ export function Header() {
   return (
     <header className="py-10">
       <Container>
-        <nav className="relative z-50 text-sm">
+        <nav className="relative z-50 text-sm flex">
           <ul className="flex items-center">
             <li>
               <Link href="#">
                 <a>
                   <span className="sr-only">Home</span>
-                  <Logo className="h-10 w-auto" />
+                  <Logo />
                 </a>
               </Link>
             </li>
             <li className="ml-12 hidden md:block">
               <Link href="#services">
-                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                <a className="rounded-lg py-1 px-2 text-croke-400 hover:bg-croke-200 hover:text-slate-900">
                   Services
                 </a>
               </Link>
             </li>
             <li className="ml-6 hidden md:block">
               <Link href="#about">
-                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                <a className="rounded-lg py-1 px-2 text-croke-400 hover:bg-croke-200 hover:text-slate-900">
                   About
                 </a>
               </Link>
             </li>
             <li className="ml-6 hidden md:block">
               <Link href="#contact">
-                <a className="rounded-lg text-slate-700 py-1 px-2 hover:700 hover:text-black">
+                <a className="rounded-lg py-1 px-2 text-croke-400 hover:bg-croke-200 hover:text-slate-900">
                   Contact Us
                 </a>
               </Link>

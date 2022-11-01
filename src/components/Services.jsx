@@ -28,16 +28,16 @@ export default function Services() {
       <section
           id="services"
           aria-labelledby="services-title"
-          className="bg-red-600 pt-20 pb-14 sm:pb-20 sm:pt-32 lg:pb-32"
+          className="bg-croke-400 pt-20 pb-14 sm:pb-20 sm:pt-32 lg:pb-32"
       >
         <Container>
           <div className="relative bg-white py-16 sm:py-24 lg:py-32">
         <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-          <h2 className="text-lg font-semibold text-red-600">Experience Matters</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-lg font-semibold text-croke-100">Experience Matters</h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-croke sm:text-4xl">
             Services
           </p>
-          <p className="mx-auto mt-5 max-w-prose text-xl text-gray-500">
+          <p className="mx-auto mt-5 max-w-prose text-xl text-slate-700">
             Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper
             malesuada. Eleifend condimentum id viverra nulla.
           </p>
@@ -48,7 +48,7 @@ export default function Services() {
                     <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
                       <div className="-mt-6">
                         <div>
-                      <span className="inline-flex items-center justify-center rounded-md bg-red-500 p-3 shadow-lg">
+                      <span className="inline-flex items-center justify-center rounded-md bg-croke-300 p-3 shadow-lg">
                         <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
                       </span>
                         </div>

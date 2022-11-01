@@ -30,6 +30,21 @@ module.exports = {
       maxWidth: {
         '2xl': '40rem',
       },
+      colors: {
+        'croke': {
+          DEFAULT: '#606e07',
+          '50': '#E7FFB8',
+          '100': '#829500',
+          '200': '#BABD00',
+          '300': '#FF6E37',
+          '400': '#3C413C',
+          '500': '#A8FF00',
+          '600': '#fb9067',
+          '700': '#5E8F00',
+          '800': '#395700',
+          '900': '#141F00'
+        },
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],

@@ -5,23 +5,23 @@ export default function Contact() {
       <section
           id="contact"
           aria-labelledby="contact-title"
-          className="pt-20 pb-14 sm:pb-20 sm:pt-32 lg:pb-32"
+          className="bg-croke-400 pt-20 pb-14 sm:pb-20 sm:pt-32 lg:pb-32"
       >
         <Container>
           <div className="mx-auto max-w-2xl md:text-center">
             <h2
                 id="portfolio-title"
-                className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl"
+                className="font-display text-3xl tracking-tight text-white sm:text-4xl"
             >
               Let's Do Something Great Together!
             </h2>
 
-            <form className="space-y-8 divide-y divide-gray-200">
-              <div className="space-y-8 divide-y divide-gray-200">
+            <form className="space-y-8 divide-y divide-white">
+              <div className="space-y-8 divide-y divide-white">
                 <div className="pt-8">
                   <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
                     <div className="sm:col-span-3">
-                      <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
+                      <label htmlFor="first-name" className="block text-sm font-medium text-white">
                         First name
                       </label>
                       <div className="mt-1">
@@ -35,7 +35,7 @@ export default function Contact() {
                       </div>
                     </div>
                     <div className="sm:col-span-3">
-                      <label htmlFor="last-name" className="block text-sm font-medium text-gray-700">
+                      <label htmlFor="last-name" className="block text-sm font-medium text-white">
                         Last name
                       </label>
                       <div className="mt-1">
@@ -49,7 +49,7 @@ export default function Contact() {
                       </div>
                     </div>
                     <div className="sm:col-span-3">
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                      <label htmlFor="email" className="block text-sm font-medium text-white">
                         Email address
                       </label>
                       <div className="mt-1">
@@ -63,7 +63,7 @@ export default function Contact() {
                       </div>
                     </div>
                     <div className="sm:col-span-3">
-                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+                      <label htmlFor="phone" className="block text-sm font-medium text-white">
                         Phone
                       </label>
                       <div className="mt-1">
@@ -77,7 +77,7 @@ export default function Contact() {
                       </div>
                     </div>
                     <div className="sm:col-span-6">
-                      <label htmlFor="about" className="block text-sm font-medium text-gray-700">
+                      <label htmlFor="about" className="block text-sm font-medium text-white">
                         How can we help?
                       </label>
                       <div className="mt-1">
@@ -100,7 +100,7 @@ export default function Contact() {
 
             <button
                 type="submit"
-                className="ml-3 inline-flex justify-center rounded-md border border-transparent bg-red-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+                className="ml-3 inline-flex justify-center rounded-md border border-transparent bg-croke-300 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-croke-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
             >
               Send
             </button>
