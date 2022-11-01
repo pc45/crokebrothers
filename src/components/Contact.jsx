@@ -86,7 +86,7 @@ export default function Contact() {
                             name="about"
                             rows={3}
                             className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                            placeholder="you@example.com"
+                            placeholder="let us know what you are looking for"
                             defaultValue={''}
                         />
                       </div>

@@ -61,29 +61,22 @@ function MobileNavigation() {
                 className="absolute inset-x-0 top-full mt-4 origin-top space-y-4 rounded-2xl bg-white p-6 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
               >
                 <li>
-                  <Link href="#features">
+                  <Link href="#services">
                     <a className="block w-full" onClick={() => close()}>
-                      Features
+                      Services
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#testimonials">
+                  <Link href="#about">
                     <a className="block w-full" onClick={() => close()}>
-                      Testimonials
+                      About
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#pricing">
-                    <a className="block w-full" onClick={() => close()}>
-                      Pricing
-                    </a>
-                  </Link>
-                </li>
-                <li className="border-t border-slate-300/40 pt-4">
-                  <Link href="/login">
-                    <a className="block w-full">Sign in</a>
+                  <Link href="#contact">
+                    <a className="block w-full">Contact</a>
                   </Link>
                 </li>
               </Popover.Panel>
@@ -117,22 +110,15 @@ export function Header() {
               </Link>
             </li>
             <li className="ml-6 hidden md:block">
-              <Link href="#portfolio">
-                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
-                  Portfolio
-                </a>
-              </Link>
-            </li>
-            <li className="ml-6 hidden md:block">
               <Link href="#testimonials">
                 <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
                   About
                 </a>
               </Link>
             </li>
-            <li className="ml-auto hidden md:block">
+            <li className="ml-6 hidden md:block">
               <Link href="#contact">
-                <a className="rounded-lg bg-red-500 p-16 text-white font-bold py-1 px-2 hover:700 hover:text-black">
+                <a className="rounded-lg text-slate-700 py-1 px-2 hover:700 hover:text-black">
                   Contact Us
                 </a>
               </Link>

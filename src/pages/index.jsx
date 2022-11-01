@@ -4,9 +4,7 @@ import { CallToAction } from '@/components/CallToAction'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { SecondaryFeatures } from '@/components/SecondaryFeatures'
-import { Clients } from "@/components/Clients";
+import  Services  from '@/components/Services'
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -22,8 +20,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <PrimaryFeatures />
-        <SecondaryFeatures />
+        <Services />
         <CallToAction />
         <Contact />
       </main>
