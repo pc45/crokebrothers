@@ -4,15 +4,15 @@ import { Container } from '@/components/Container'
 export function Footer() {
   return (
     <footer>
-      <Container className="flex flex-col space-y-8 md:grid md:grid-cols-3 md:gap-x-3 justify-center py-4 ">
+      <Container className="flex flex-col space-y-8 md:grid md:grid-cols-3 md:gap-x-3 md:space-y-0 justify-center items-center py-8 ">
         <div>
-          <p className="text-sm text-croke sm:mt-0 text-center">
+          <p className="text-sm text-croke text-center">
             Copyright &copy; {new Date().getFullYear()} Croke &amp; Company. All rights
             reserved.
           </p>
         </div>
-        <div>
-          <nav className="text-sm" aria-label="quick links">
+
+        <nav className="text-sm" aria-label="quick links">
             <ul className="flex justify-center space-x-6">
               <li>
                 <Link href="#services">
@@ -37,7 +37,7 @@ export function Footer() {
               </li>
             </ul>
           </nav>
-        </div>
+
         <div className=" text-center border-t border-slate-400/10 sm:flex-row-reverse sm:justify-between">
           <div className="flex justify-center space-x-6">
             <Link href="#">
