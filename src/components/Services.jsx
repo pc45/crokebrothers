@@ -8,7 +8,7 @@ import {
 const features = [
   {
     name: 'Strategic & Crisis Communication',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description: '',
     icon: ChatBubbleBottomCenterIcon,
   },
   {
@@ -33,13 +33,12 @@ export default function Services() {
         <Container>
           <div className="relative bg-white py-8 sm:py-12 lg:py-16">
             <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-          <h2 className="text-lg font-semibold text-croke-100">Experience Matters</h2>
+
           <p className="font-display text-3xl tracking-tight text-croke sm:text-4xl">
-            Services
+            Core Services
           </p>
           <p className="mx-auto mt-5 max-w-prose text-xl text-slate-700">
-            Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper
-            malesuada. Eleifend condimentum id viverra nulla.
+            Building on two decades of service to government, university, and nonprofit leaders, Croke & Co. can help you navigate any public challenge.
           </p>
           <div className="mt-12">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">

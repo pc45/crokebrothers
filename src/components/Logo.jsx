@@ -1,4 +1,4 @@
-import crokeLogo from '@/images/logos/croke-icon.svg'
+import crokeLogo from '@/images/logos/croke icon fill.svg'
 import Image from "next/image";
 
 export function Logo() {

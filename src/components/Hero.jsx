@@ -4,7 +4,7 @@ import { Container } from '@/components/Container'
 export function Hero() {
   return (
     <Container className="pt-10 pb-16 text-center lg:pt-16">
-      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-croke sm:text-7xl">
+      <h1 className="mx-auto uppercase max-w-4xl font-display text-5xl font-medium tracking-tight text-croke sm:text-7xl">
         Croke{' '}
         <span className="relative whitespace-nowrap text-croke-300">
 
@@ -13,7 +13,7 @@ export function Hero() {
         Company
       </h1>
       <h3 className=" text-2xl mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        Building on two decades of service to government, university, and nonprofit leaders
+        Problem solving and persuasion in the public interest
       </h3>
       <div className="mt-10 flex justify-center space-x-6">
         <ButtonLink href="#contact" className="bg-croke-300">Partner with us</ButtonLink>
