@@ -8,7 +8,7 @@ export default function Contact() {
           className="bg-croke-400 py-20"
       >
         <Container>
-          <div className="mx-auto max-w-2xl md:text-center">
+          <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-lg font-semibold text-croke-100">Get Started</h2>
             <p className="font-display text-3xl tracking-tight text-white sm:text-4xl">
               Let's do something great together!
