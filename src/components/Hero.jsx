@@ -3,7 +3,7 @@ import { Container } from '@/components/Container'
 
 export function Hero() {
   return (
-    <Container className="pt-10 pb-16 text-center lg:pt-16">
+    <Container className="py-20 text-center">
       <h1 className="mx-auto uppercase max-w-4xl font-display text-5xl font-medium tracking-tight text-croke sm:text-7xl">
         Croke{' '}
         <span className="relative whitespace-nowrap text-croke-300">
@@ -12,7 +12,7 @@ export function Hero() {
         </span>{' '}
         Company
       </h1>
-      <h3 className=" text-2xl mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
+      <h3 className=" text-2xl mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700 font-bold">
         Problem solving and persuasion in the public interest
       </h3>
       <div className="mt-10 flex justify-center space-x-6">

@@ -5,7 +5,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden py-32"
+      className="relative overflow-hidden py-20"
     >
 
       <Container className="relative">

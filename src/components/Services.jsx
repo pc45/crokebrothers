@@ -28,10 +28,10 @@ export default function Services() {
       <section
           id="services"
           aria-labelledby="services-title"
-          className="bg-croke-400 pt-20 pb-14 sm:pb-20 sm:pt-32 lg:pb-32"
+          className="bg-croke-400 py-20"
       >
         <Container>
-          <div className="relative bg-white py-8 sm:py-12 lg:py-16">
+          <div className="relative bg-white sm:py-12 lg:py-16">
             <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
 
           <p className="font-display text-3xl tracking-tight text-croke sm:text-4xl">

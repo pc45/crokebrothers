@@ -5,7 +5,7 @@ export default function Contact() {
       <section
           id="contact"
           aria-labelledby="contact-title"
-          className="bg-croke-400 pt-20 pb-14 sm:pb-20 sm:pt-32 lg:pb-32"
+          className="bg-croke-400 py-20"
       >
         <Container>
           <div className="mx-auto max-w-2xl md:text-center">
