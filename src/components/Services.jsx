@@ -8,12 +8,12 @@ import {
 const features = [
   {
     name: 'Strategic & Crisis Communication',
-    description: '',
+    description: 'Want to get ahead of a problem? React to a crisis? Manage through a difficult time or share good news with the people who need to hear it? We’ll design a custom strategy to maximize your impact and minimize the harm if you’re navigating difficult circumstances.',
     icon: ChatBubbleBottomCenterIcon,
   },
   {
     name: 'Video Production',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    description: 'Video is a powerful, proven tool for changing minds, building brands, engaging audiences, and generating sales. Let us transform your best ideas and lengthy reports into video masterpieces for exactly the audience you want to reach.',
     icon: VideoCameraIcon,
   },
   {
