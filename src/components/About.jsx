@@ -15,7 +15,7 @@ export function About() {
             About
           </p>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            CROKE & COMPANY exists to support public interest causes and progressive campaigns. We harness decades of strategic public communications, video production and web development services to help our clients thrive.
+            Croke & Co. exists to support public interest causes and progressive campaigns. We harness decades of strategic public communications, video production and web development experience to help our clients thrive.
           </p>
         </div>
       </Container>
