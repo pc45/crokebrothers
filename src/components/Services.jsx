@@ -31,16 +31,16 @@ export default function Services() {
           className="bg-croke-400 py-20"
       >
         <Container>
-          <div className="relative bg-white sm:py-12 lg:py-16">
+          <div className="relative bg-white py-20">
             <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
 
-          <p className="font-display text-3xl tracking-tight text-croke sm:text-4xl">
-            Core Services
-          </p>
-          <p className="mx-auto mt-5 max-w-prose text-xl text-slate-700">
-            Building on two decades of service to government, university, and nonprofit leaders, Croke & Co. can help you navigate any public challenge.
-          </p>
-          <div className="mt-12">
+              <p className="font-display text-3xl tracking-tight text-croke sm:text-4xl">
+                Core Services
+              </p>
+              <p className="mx-auto mt-5 max-w-prose text-xl text-slate-700">
+                Building on two decades of service to government, university, and nonprofit leaders, Croke & Co. can help you navigate any public challenge.
+              </p>
+              <div className="mt-12">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {features.map((feature) => (
                   <div key={feature.name} className="pt-6">
@@ -59,7 +59,7 @@ export default function Services() {
               ))}
             </div>
           </div>
-        </div>
+            </div>
       </div>
         </Container>
       </section>

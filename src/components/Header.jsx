@@ -16,7 +16,7 @@ function MobileNavigation() {
             <span className="sr-only">Toggle Navigation</span>
             <svg
               aria-hidden="true"
-              className="h-3.5 w-3.5 overflow-visible stroke-slate-700"
+              className="h-3.5 w-3.5 overflow-visible stroke-croke-300"
               fill="none"
               strokeWidth={2}
               strokeLinecap="round"
@@ -116,14 +116,14 @@ export function Header() {
                 </a>
               </Link>
             </li>
-            <li className="ml-6 hidden md:block">
+            <li className="ml-6 hidden md:block ">
               <Link href="#contact">
                 <a className="font-display tracking-widest font-bold text-lg rounded-lg py-1 px-2 text-white hover:bg-croke-200 hover:text-slate-900">
                   Contact Us
                 </a>
               </Link>
             </li>
-            <li className="ml-5 -mr-1 md:hidden">
+            <li className="ml-48 -mr-1 md:hidden">
               <MobileNavigation />
             </li>
           </ul>

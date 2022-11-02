@@ -4,9 +4,9 @@ import { Container } from '@/components/Container'
 export function Footer() {
   return (
     <footer>
-      <Container className="grid grid-cols-3 gap-x-3 content-center py-4">
+      <Container className="flex flex-col space-y-8 md:grid md:grid-cols-3 md:gap-x-3 justify-center py-4 ">
         <div>
-          <p className="text-sm text-croke sm:mt-0">
+          <p className="text-sm text-croke sm:mt-0 text-center">
             Copyright &copy; {new Date().getFullYear()} Croke &amp; Company. All rights
             reserved.
           </p>
@@ -38,8 +38,8 @@ export function Footer() {
             </ul>
           </nav>
         </div>
-        <div className="border-t border-slate-400/10 sm:flex-row-reverse sm:justify-between">
-          <div className="flex space-x-6">
+        <div className=" text-center border-t border-slate-400/10 sm:flex-row-reverse sm:justify-between">
+          <div className="flex justify-center space-x-6">
             <Link href="#">
               <a className="group">
                 <span className="sr-only">Croke&amp;Co on Twitter</span>
