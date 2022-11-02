@@ -15,13 +15,7 @@ export function About() {
             About
           </p>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            We're open to serving any business, organization, or individual interested in advancing the public interest and the common good.
-          </p>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
-            We have been privileged to work for leaders whose progressive values we share: inclusion, equality of opportunity, and respect for marginalized people. Our commitment to those goals is stronger than ever.
-          </p>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
-            <Link href="#contact"><a className="text-croke-300 hover:text-croke-600"> Reach out </a></Link> if you have questions or might like to partner with us on a project!
+            CROKE & COMPANY exists to support public interest causes and progressive campaigns. We harness decades of strategic public communications, video production and web development services to help our clients thrive.
           </p>
         </div>
       </Container>
