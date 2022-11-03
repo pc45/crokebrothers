@@ -79,6 +79,11 @@ function MobileNavigation() {
                     <a className="block w-full">Contact</a>
                   </Link>
                 </li>
+                <li>
+                  <Link href="#team">
+                    <a className="block w-full">Our Team</a>
+                  </Link>
+                </li>
               </Popover.Panel>
             </Transition.Child>
           </Transition.Root>
@@ -120,6 +125,13 @@ export function Header() {
               <Link href="#contact">
                 <a className="font-display tracking-widest font-bold text-lg rounded-lg py-1 px-2 text-white hover:bg-croke-200 hover:text-slate-900">
                   Contact Us
+                </a>
+              </Link>
+            </li>
+            <li className="ml-6 hidden md:block ">
+              <Link href="#team">
+                <a className="font-display tracking-widest font-bold text-lg rounded-lg py-1 px-2 text-white hover:bg-croke-200 hover:text-slate-900">
+                  Our Team
                 </a>
               </Link>
             </li>
