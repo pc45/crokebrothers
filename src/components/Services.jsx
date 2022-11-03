@@ -3,6 +3,7 @@ import {
   ChatBubbleBottomCenterIcon,
   VideoCameraIcon,
   ComputerDesktopIcon,
+  ChartBarIcon,
 } from '@heroicons/react/24/outline'
 
 const features = [
@@ -24,7 +25,7 @@ const features = [
   {
     name: 'Polling',
     description: 'We’ll design, conduct, and manage surveys to inform your mission and nourish your need for precise, compelling data.',
-    icon: ComputerDesktopIcon,
+    icon: ChartBarIcon,
   },
 ]
 
