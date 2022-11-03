@@ -9,7 +9,7 @@ import {
 const features = [
   {
     name: 'Strategic Communication',
-    description: 'Want to get ahead of a problem? React to a crisis? Manage through a difficult time or share good news with the people who need to hear it? We’ll design a custom strategy to maximize your impact and minimize the harm if you’re navigating difficult circumstances.',
+    description: 'Want to get ahead of a problem? Manage a crisis? React to a difficult event or share good news with the people who need to hear it? We’ll customize a strategy to strengthen your reputation and maximize your impact.',
     icon: ChatBubbleBottomCenterIcon,
   },
   {
@@ -19,12 +19,12 @@ const features = [
   },
   {
     name: 'Web Development',
-    description: 'Turn your ideas into reality. From initial concepts and design through product launch, we\'re there to lead the way.',
+    description: 'Turn your ideas into reality. From initial concepts and design through site launch and maintenance, we’re there to simplify every step of the process for you.',
     icon: ComputerDesktopIcon,
   },
   {
     name: 'Polling',
-    description: 'We’ll design, conduct, and manage surveys to inform your mission and nourish your need for precise, compelling data.',
+    description: 'We’ll design, conduct, and synthesize survey research to inform your mission and nourish your need for prompt, precise, compelling facts. We will always share results and analysis in plain language to help you make smart, data-driven decisions.',
     icon: ChartBarIcon,
   },
 ]
