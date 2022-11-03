@@ -78,7 +78,7 @@ export default function Team() {
                           <h3 className="text-slate-700">{person.name}</h3>
                           <p className="font-display tracking-tight text-croke">{person.role}</p>
                         </div>
-                        <div className="text-lg">
+                        <div className="text-md">
                           <p className="text-slate-700">{person.bio}</p>
                         </div>
 
