@@ -7,13 +7,14 @@ import  Services  from '@/components/Services'
 import Contact from "@/components/Contact";
 
 export default function Home() {
+
   return (
     <>
       <Head>
         <title>Croke &amp; Co</title>
         <meta
           name="description"
-          content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aut beatae eum libero pariatur suscipit voluptas! Praesentium, sunt voluptate?"
+          content="CROKE & COMPANY exists to support public interest causes and progressive campaigns. We harness decades of strategic public communications, video production and web development services to help our clients thrive."
         />
       </Head>
       <Header />

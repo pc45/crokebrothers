@@ -1,6 +1,84 @@
+import React, { useState } from 'react'
 import { Container } from "@/components/Container";
+import {Listbox, Transition} from "@headlessui/react";
+import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
+
+const services = [
+  "Strategic Communication",
+  "Video Production",
+  "Web Development",
+  "Polling",
+  "Something else...",
+];
 
 export default function Contact() {
+
+  const [firstname, setFirstName] = useState('')
+  const [lastname, setLastName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
+  const [message, setMessage] = useState('')
+  const [submitted, setSubmitted] = useState(false)
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedServices, setselectedServices] = useState([]);
+
+  function isSelected(value) {
+    return selectedServices.find((el) => el === value) ? true : false;
+  }
+
+  function handleSelect(value) {
+    if (!isSelected(value)) {
+      const selectedServicesUpdated = [
+        ...selectedServices,
+        services.find((el) => el === value)
+      ];
+      setselectedServices(selectedServicesUpdated);
+    } else {
+      handleDeselect(value);
+    }
+    setIsOpen(true);
+  }
+
+  function handleDeselect(value) {
+    const selectedServicesUpdated = selectedServices.filter((el) => el !== value);
+    setselectedServices(selectedServicesUpdated);
+    setIsOpen(true);
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    let data = {
+      firstname,
+      lastname,
+      email,
+      phone,
+      message,
+      selectedServices,
+    }
+
+    fetch('api/contact', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    }).then((res) => {
+      console.log(data)
+      console.log(res.status)
+      if (res.status === 200) {
+        setSubmitted(true)
+        setFirstName('')
+        setLastName('')
+        setEmail('')
+        setPhone('')
+        setMessage('')
+        setselectedServices([])
+      }
+    })
+  }
+
   return (
       <section
           id="contact"
@@ -11,38 +89,54 @@ export default function Contact() {
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-lg font-semibold text-croke-100">Get Started</h2>
             <p className="font-display text-3xl tracking-tight text-white sm:text-4xl">
-              Let's do something great together!
+              Let's Collaborate!
             </p>
+            <dl className="mt-8 text-base text-white">
+              <div className="mt-6">
+                <dt className="sr-only">Phone number</dt>
+                <dd className="flex justify-center">
+                  <PhoneIcon className="h-6 w-6 flex-shrink-0 text-white" aria-hidden="true" />
+                  <span className="ml-3">+1 (555) 123-4567</span>
+                </dd>
+              </div>
+              <div className="mt-3">
+                <dt className="sr-only">Email</dt>
+                <dd className="flex justify-center">
+                  <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-white" aria-hidden="true" />
+                  <span className="ml-3">team@crokeand.co</span>
+                </dd>
+              </div>
+            </dl>
 
             <form className="space-y-8 divide-y divide-white">
               <div className="space-y-8 divide-y divide-white">
                 <div className="pt-8">
                   <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
                     <div className="sm:col-span-3">
-                      <label htmlFor="first-name" className="block text-sm font-medium text-white">
+                      <label htmlFor="firstname" className="block text-sm font-medium text-white">
                         First name
                       </label>
                       <div className="mt-1">
                         <input
                             type="text"
-                            name="first-name"
-                            id="first-name"
-                            autoComplete="given-name"
-                            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                            name="firstname"
+                            id="firstname"
+                            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-croke-200 focus:ring-croke-200 sm:text-sm"
+                            onChange={(e)=>{setFirstName(e.target.value)}}
                         />
                       </div>
                     </div>
                     <div className="sm:col-span-3">
-                      <label htmlFor="last-name" className="block text-sm font-medium text-white">
+                      <label htmlFor="lastname" className="block text-sm font-medium text-white">
                         Last name
                       </label>
                       <div className="mt-1">
                         <input
                             type="text"
-                            name="last-name"
-                            id="last-name"
-                            autoComplete="family-name"
-                            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                            name="lastname"
+                            id="lastname"
+                            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-croke-200 focus:ring-croke-200 sm:text-sm"
+                            onChange={(e)=>{setLastName(e.target.value)}}
                         />
                       </div>
                     </div>
@@ -55,8 +149,8 @@ export default function Contact() {
                             id="email"
                             name="email"
                             type="email"
-                            autoComplete="email"
-                            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-croke-200 focus:ring-croke-200 sm:text-sm"
+                            onChange={(e)=>{setEmail(e.target.value)}}
                         />
                       </div>
                     </div>
@@ -69,23 +163,131 @@ export default function Contact() {
                             id="phone"
                             name="phone"
                             type="text"
-                            autoComplete="phone"
-                            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-croke-200 focus:ring-croke-200 sm:text-sm"
+                            onChange={(e)=>{setPhone(e.target.value)}}
                         />
                       </div>
                     </div>
                     <div className="sm:col-span-6">
                       <label htmlFor="about" className="block text-sm font-medium text-white">
-                        How can we help?
+                        I'm interested in...
+                      </label>
+                      <div className="mt-1">
+                        <Listbox
+                            as="div"
+                            className="space-y-1"
+                            value={selectedServices}
+                            onChange={(value) => handleSelect(value)}
+                            open={isOpen}
+                        >
+                          {() => (
+                              <>
+                                <div className="relative">
+                    <span className="inline-block w-full rounded-md shadow-sm">
+                  <Listbox.Button
+                      className="cursor-default relative w-full rounded-md border border-gray-300 bg-white border-gray-300 shadow-sm focus:border-croke-200 focus:ring-croke-200 pl-3 pr-10 py-2 text-left transition ease-in-out duration-150 sm:text-sm sm:leading-5"
+                      onClick={() => setIsOpen(!isOpen)}
+                      open={isOpen}
+                  >
+                    <span className="block truncate text-xs py-2">
+                      {selectedServices.length < 1
+                          ? "Select from the following options"
+                          : `You selected: ${selectedServices}`}
+                    </span>
+                    <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+                      <svg
+                          className="h-5 w-5 text-croke-300"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          stroke="currentColor"
+                      >
+                        <path
+                            d="M7 7l3-3 3 3m0 6l-3 3-3-3"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </Listbox.Button>
+                </span>
+
+                                  <Transition
+                                      unmount={false}
+                                      show={isOpen}
+                                      leave="transition ease-in duration-100"
+                                      leaveFrom="opacity-100"
+                                      leaveTo="opacity-0"
+                                      className="absolute mt-1 w-full rounded-md bg-white shadow-lg"
+                                  >
+                                    <Listbox.Options
+                                        static
+                                        className="rounded-md py-1 shadow-xs overflow-auto focus:outline-none sm:text-sm sm:leading-5"
+                                    >
+                                      {services.map((service) => {
+                                        const selected = isSelected(service);
+                                        return (
+                                            <Listbox.Option key={service} value={service}>
+                                              {({ active }) => (
+                                                  <div
+                                                      className={`${
+                                                          active
+                                                              ? "text-white bg-croke"
+                                                              : "text-slate-700"
+                                                      } cursor-default select-none relative py-2 pl-8 pr-4`}
+                                                  >
+                                <span
+                                    className={`${
+                                        selected ? "font-semibold" : "font-normal"
+                                    } block truncate`}
+                                >
+                                  {service}
+                                </span>
+                                                    {selected && (
+                                                        <span
+                                                            className={`${
+                                                                active ? "text-white" : "text-croke-400"
+                                                            } absolute inset-y-0 left-0 flex items-center pl-1.5`}
+                                                        >
+                            <svg
+                                className="h-5 w-5"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                            >
+                              <path
+                                  fillRule="evenodd"
+                                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                  clipRule="evenodd"
+                              />
+                            </svg>
+                          </span>
+                                                    )}
+                                                  </div>
+                                              )}
+                                            </Listbox.Option>
+                                        );
+                                      })}
+                                    </Listbox.Options>
+                                  </Transition>
+                                </div>
+                              </>
+                          )}
+                        </Listbox>
+                      </div>
+                    </div>
+                    <div className="sm:col-span-6">
+                      <label htmlFor="about" className="block text-sm font-medium text-white">
+                        What do we need to know?
                       </label>
                       <div className="mt-1">
                         <textarea
-                            id="about"
-                            name="about"
+                            id="message"
+                            name="message"
                             rows={3}
-                            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                            placeholder="let us know what you are looking for"
-                            defaultValue={''}
+                            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-croke-200 focus:ring-croke-200 sm:text-sm"
+                            placeholder=""
+                            onChange={(e)=>{setMessage(e.target.value)}}
                         />
                       </div>
                     </div>
@@ -95,10 +297,10 @@ export default function Contact() {
 
               <div className="pt-5">
           <div className="flex justify-end">
-
             <button
                 type="submit"
-                className="ml-3 inline-flex justify-center rounded-md border border-transparent bg-croke-300 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-croke-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+                className="ml-3 inline-flex justify-center rounded-md border border-transparent bg-croke-300 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-croke-600 focus:outline-none focus:ring-2 focus:ring-croke focus:ring-offset-2"
+                onClick={(e)=>{handleSubmit(e)}}
             >
               Send
             </button>
