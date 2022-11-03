@@ -7,7 +7,7 @@ import {
 
 const features = [
   {
-    name: 'Strategic & Crisis Communication',
+    name: 'Strategic Communication',
     description: 'Want to get ahead of a problem? React to a crisis? Manage through a difficult time or share good news with the people who need to hear it? We’ll design a custom strategy to maximize your impact and minimize the harm if you’re navigating difficult circumstances.',
     icon: ChatBubbleBottomCenterIcon,
   },
@@ -17,8 +17,13 @@ const features = [
     icon: VideoCameraIcon,
   },
   {
-    name: 'Web Development & Design',
-    description: 'Turn your ideas into reality. From initial concept through product launch, we\'re there to lead the way.',
+    name: 'Web Development',
+    description: 'Turn your ideas into reality. From initial concepts and design through product launch, we\'re there to lead the way.',
+    icon: ComputerDesktopIcon,
+  },
+  {
+    name: 'Polling',
+    description: 'We’ll design, conduct, and manage surveys to inform your mission and nourish your need for precise, compelling data.',
     icon: ComputerDesktopIcon,
   },
 ]
@@ -41,7 +46,7 @@ export default function Services() {
                 Building on two decades of service to government, university, and nonprofit leaders, Croke & Co. can help you navigate any public challenge.
               </p>
               <div className="mt-12">
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 lg:grid-cols-2">
               {features.map((feature) => (
                   <div key={feature.name} className="pt-6">
                     <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
