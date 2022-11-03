@@ -38,7 +38,7 @@ export function Footer() {
             </ul>
           </nav>
 
-        <div className=" text-center border-t border-slate-400/10 sm:flex-row-reverse sm:justify-between">
+        <div className=" text-center sm:flex-row-reverse sm:justify-between">
           <div className="flex justify-center space-x-6">
             <Link href="#">
               <a className="group">
