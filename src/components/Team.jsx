@@ -13,14 +13,6 @@ const people = [
     linkedinUrl: '#',
   },
   {
-    name: 'Pete Croke',
-    role: 'Full Stack Developer',
-    imageUrl: ryan,
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id porta nisi, eget efficitur nibh. Etiam sit amet nibh vitae arcu pretium feugiat ut at tellus. Morbi turpis ante, dictum eget venenatis vitae, pulvinar sit amet ex. Nulla eu neque tempus, volutpat lorem id, placerat lorem. In interdum, nisi quis euismod mattis, neque erat viverra arcu, at volutpat arcu orci ut est. Maecenas scelerisque urna ex, quis imperdiet est imperdiet et. Pellentesque commodo id ante eget gravida. Suspendisse elementum gravida sem, a accumsan neque suscipit nec. Praesent non malesuada risus, in fermentum lectus. Vestibulum id dolor quis purus ultricies iaculis venenatis ac lacus. Praesent faucibus tempor ultrices. Sed lorem arcu, viverra a fringilla ut, ornare vitae erat. Nunc facilisis nibh erat, eu ornare ex condimentum non. Sed id justo sit amet urna laoreet cursus tempor nec arcu. Integer id arcu quis sem pretium commodo. Ut consectetur lectus nec ipsum euismod, a dignissim urna ultricies.',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
     name: 'Simon Edelman',
     role: 'Senior Front-end Developer',
     imageUrl: ryan,
@@ -39,6 +31,14 @@ const people = [
         'Donoso joins NORC from the Institute for Social Research at the University of Michigan, where he worked as a senior survey researcher in the Project Design and Management Group. Previously, he started a survey research firm in his native country of Ecuador, where he partnered with local and international organizations such as the Constitutional Court of Ecuador and USAID to design and execute research projects on democracy development and rule of law.\n' +
         '\n' +
         'Donoso has published scholarly work in peer reviewed journals as well as chapters in edited volumes and reports for public release. He is an active member of AAPOR, ESRA and WAPOR and frequently presents at survey research conferences.',
+    twitterUrl: '#',
+    linkedinUrl: '#',
+  },
+  {
+    name: 'Pete Croke',
+    role: 'Full Stack Developer',
+    imageUrl: ryan,
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id porta nisi, eget efficitur nibh. Etiam sit amet nibh vitae arcu pretium feugiat ut at tellus. Morbi turpis ante, dictum eget venenatis vitae, pulvinar sit amet ex. Nulla eu neque tempus, volutpat lorem id, placerat lorem. In interdum, nisi quis euismod mattis, neque erat viverra arcu, at volutpat arcu orci ut est. Maecenas scelerisque urna ex, quis imperdiet est imperdiet et. Pellentesque commodo id ante eget gravida. Suspendisse elementum gravida sem, a accumsan neque suscipit nec. Praesent non malesuada risus, in fermentum lectus. Vestibulum id dolor quis purus ultricies iaculis venenatis ac lacus. Praesent faucibus tempor ultrices. Sed lorem arcu, viverra a fringilla ut, ornare vitae erat. Nunc facilisis nibh erat, eu ornare ex condimentum non. Sed id justo sit amet urna laoreet cursus tempor nec arcu. Integer id arcu quis sem pretium commodo. Ut consectetur lectus nec ipsum euismod, a dignissim urna ultricies.',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
