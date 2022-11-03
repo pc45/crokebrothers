@@ -15,7 +15,7 @@ export function About() {
             About
           </p>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Want to get ahead of a problem? React to a crisis? Manage through a difficult time or share good news with those who need to hear it most? We’ll design a custom strategy to reduce negativity, strengthen your reputation, and maximize your impact.
+            Croke & Co. exists to support progressive causes, companies, and campaigns. We harness decades of strategic public communications, polling, video production and web development experience to help our clients thrive.
           </p>
         </div>
       </Container>
