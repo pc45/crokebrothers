@@ -12,7 +12,7 @@ export function Hero() {
         </span>{' '}
         Company
       </h1>
-      <h3 className=" text-2xl mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700 font-bold">
+      <h3 className=" text-2xl mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700 font-bold italic">
         Problem solving and persuasion in the public interest
       </h3>
       <div className="mt-10 flex justify-center space-x-6">
