@@ -12,8 +12,7 @@ const people = [
     name: 'Ryan Croke',
     role: 'CEO',
     imageUrl: ryan,
-    bio: 'Ryan Croke served as Chief of Staff in the Illinois Department of\n' +
-        'Human Services, the State government\'s largest agency, during Governor JB Pritzker\'s first term. Prior to that, he was Executive Director of the statewide association of Centers for Independent Living in Illinois, and the Associate Chancellor for Public Affairs at the University of Illinois Springfield. He spent almost a decade working for Lieutenant Governor and the Governor Pat Quinn, eventually as Chief of Staff to the Governor. During that time he was central to the development of Illinois\' broadband infrastructure investments, handled public safety, rural affairs, and executive appointments. He volunteers as a board member on the District 186 Public Schools Foundation and as President of the Mid-Illinois Medical District Commission. In 2019 the German Marshall Fund of the United States selected him as a Marshall Memorial Fellow. Ryan earned undergrad and masters degrees in communication at the University of Illinois at Urbana-Champaign. He and his wife Brook live in Springfield with their three young children.',
+    bio: 'Ryan has served in State government’s highest profile roles and agencies - helping manage and execute highly visible public responsibilities - during periods of turbulence, crisis, and transition. He was central to the development of Illinois\' broadband infrastructure investments for Governor Pat Quinn, and was Chief of Staff inside Illinois’ largest agency, the Department of Human Services, during the administration of Governor JB Pritzker. He is an active civic leader and community volunteer who earned undergrad and masters degrees in communication at the University of Illinois at Urbana-Champaign.',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
