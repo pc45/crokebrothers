@@ -19,7 +19,7 @@ const features = [
   },
   {
     name: 'Web Development',
-    description: 'Turn your ideas into reality. From initial concepts and design through site launch and maintenance, we’re there to simplify every step of the process for you.',
+    description: 'Turn your ideas into reality. From initial concepts and design, through site launch and maintenance, we’re there to execute — keeping every step of the process simple and painless for you.',
     icon: ComputerDesktopIcon,
   },
   {

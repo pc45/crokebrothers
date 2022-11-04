@@ -2,10 +2,9 @@ import { Fragment } from 'react'
 import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
-
-import { ButtonLink } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
+import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
 function MobileNavigation() {
   return (
@@ -96,7 +95,7 @@ function MobileNavigation() {
 export function Header() {
   return (
     <header className="py-4 bg-croke">
-      <Container>
+      <Container className="flex justify-between items-center">
         <nav className="relative z-50 text-sm flex">
           <ul className="flex items-center">
             <li>
@@ -140,6 +139,32 @@ export function Header() {
             </li>
           </ul>
         </nav>
+        <div className="hidden md:flex">
+          <dl className="text-base text-white flex justify-items-end space-x-4">
+            <div>
+              <dt className="sr-only">Phone number</dt>
+              <dd className="hover:text-croke-300">
+                <a href="tel:636-336-2428" className="flex justify-center">
+                  <PhoneIcon className="h-6 w-6 flex-shrink-0" aria-hidden="true" />
+                  <span className="ml-3">
+                    636-336-2428
+                  </span>
+                </a>
+              </dd>
+            </div>
+            <div>
+              <dt className="sr-only">Email</dt>
+              <dd className="hover:text-croke-300">
+                <a href="mailto:team@crokeand.co" className="flex justify-center">
+                  <EnvelopeIcon className="h-6 w-6 flex-shrink-0" aria-hidden="true" />
+                  <span className="ml-3">
+                    team@crokeand.co
+                  </span>
+                </a>
+              </dd>
+            </div>
+          </dl>
+        </div>
       </Container>
     </header>
   )

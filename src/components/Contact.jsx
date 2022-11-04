@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Container } from "@/components/Container";
 import {Listbox, Transition} from "@headlessui/react";
-import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
 const services = [
   "Strategic Communication",
@@ -57,6 +56,9 @@ export default function Contact() {
       selectedServices,
     }
 
+
+    return false
+
     fetch('api/contact', {
       method: 'POST',
       headers: {
@@ -91,24 +93,7 @@ export default function Contact() {
             <p className="font-display text-3xl tracking-tight text-white sm:text-4xl">
               Let's Collaborate!
             </p>
-            <dl className="mt-8 text-base text-white">
-              <div className="mt-6">
-                <dt className="sr-only">Phone number</dt>
-                <dd className="flex justify-center">
-                  <PhoneIcon className="h-6 w-6 flex-shrink-0 text-white" aria-hidden="true" />
-                  <span className="ml-3">+1 (555) 123-4567</span>
-                </dd>
-              </div>
-              <div className="mt-3">
-                <dt className="sr-only">Email</dt>
-                <dd className="flex justify-center">
-                  <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-white" aria-hidden="true" />
-                  <span className="ml-3">team@crokeand.co</span>
-                </dd>
-              </div>
-            </dl>
-
-            <form className="space-y-8 divide-y divide-white">
+            <form className="space-y-8 divide-y divide-white" noValidate>
               <div className="space-y-8 divide-y divide-white">
                 <div className="pt-8">
                   <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
@@ -119,6 +104,7 @@ export default function Contact() {
                       <div className="mt-1">
                         <input
                             type="text"
+                            required
                             name="firstname"
                             id="firstname"
                             className="block w-full rounded-md border-gray-300 shadow-sm focus:border-croke-200 focus:ring-croke-200 sm:text-sm"
@@ -134,6 +120,7 @@ export default function Contact() {
                         <input
                             type="text"
                             name="lastname"
+                            required
                             id="lastname"
                             className="block w-full rounded-md border-gray-300 shadow-sm focus:border-croke-200 focus:ring-croke-200 sm:text-sm"
                             onChange={(e)=>{setLastName(e.target.value)}}
@@ -148,6 +135,7 @@ export default function Contact() {
                         <input
                             id="email"
                             name="email"
+                            required
                             type="email"
                             className="block w-full rounded-md border-gray-300 shadow-sm focus:border-croke-200 focus:ring-croke-200 sm:text-sm"
                             onChange={(e)=>{setEmail(e.target.value)}}
@@ -162,6 +150,7 @@ export default function Contact() {
                         <input
                             id="phone"
                             name="phone"
+                            required
                             type="text"
                             className="block w-full rounded-md border-gray-300 shadow-sm focus:border-croke-200 focus:ring-croke-200 sm:text-sm"
                             onChange={(e)=>{setPhone(e.target.value)}}
@@ -179,6 +168,7 @@ export default function Contact() {
                             value={selectedServices}
                             onChange={(value) => handleSelect(value)}
                             open={isOpen}
+                            required
                         >
                           {() => (
                               <>
@@ -284,7 +274,8 @@ export default function Contact() {
                         <textarea
                             id="message"
                             name="message"
-                            rows={3}
+                            required
+                            rows={5}
                             className="block w-full rounded-md border-gray-300 shadow-sm focus:border-croke-200 focus:ring-croke-200 sm:text-sm"
                             placeholder=""
                             onChange={(e)=>{setMessage(e.target.value)}}
