@@ -20,7 +20,7 @@ const people = [
     name: 'Kris Knight',
     role: 'Partner - Communications',
     imageUrl: kris,
-    bio: 'With over a decade of political experience, Kristal has positioned herself as a premier political operative, most recently serving as the political director for Priorities USA, the largest Democratic super PAC during the 2020 election cycle. There she managed a nationwide coalition of grassroots and leading advocacy organizations, advising them on digital spend for the election cycle.',
+    bio: 'Kristal is a veteran national news commentator and media expert who served as political director for Priorities USA, the largest Democratic super PAC during the 2020 election cycle. A seasoned trainer, Kristal advises candidates running for office and helps organizations develop political engagement programs. The founding executive director for Emerge Tennessee, a Democratic candidate-training program for women seeking public office, she helped elect over 25 women into local, county and state seats. Her career has included local and national campaigns and includes Hillary for America in 2016 and Obama for America in 2012. She earned a master’s degree in International Public Policy from University College London and a BA in Journalism from Howard University.',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -35,16 +35,10 @@ const people = [
     linkedinUrl: '#',
   },
   {
-    name: 'Juan Carlos Denoso',
+    name: 'Juan Carlos Donoso',
     role: 'Partner - Polling',
     imageUrl: juancarlos,
-    bio: 'Juan Carlos Donoso is a senior research scientist in the Associated Press-NORC Center for Public Affairs Research. Donoso is a political scientist whose research focuses on public opinion and political attitudes. He has significant experience managing complex multi-mode surveys in the United States, Europe, and Latin America.\n' +
-        '\n' +
-        'Donoso has designed, conducted, and managed surveys on a variety of topics, including attitudes towards democracy, rule of law, the role of religion in public life, and issues related to public health, such as child development and housing conditions and risk factors for suicide among veterans and military service members.\n' +
-        '\n' +
-        'Donoso joins NORC from the Institute for Social Research at the University of Michigan, where he worked as a senior survey researcher in the Project Design and Management Group. Previously, he started a survey research firm in his native country of Ecuador, where he partnered with local and international organizations such as the Constitutional Court of Ecuador and USAID to design and execute research projects on democracy development and rule of law.\n' +
-        '\n' +
-        'Donoso has published scholarly work in peer reviewed journals as well as chapters in edited volumes and reports for public release. He is an active member of AAPOR, ESRA and WAPOR and frequently presents at survey research conferences.',
+    bio: 'Juan Carlos is a senior research scientist at the University of Chicago - AP-NORC Center for Public Affairs Research. Donoso is a political scientist whose research focuses on public opinion and political attitudes. He has significant experience managing complex multi-mode surveys in the US, Europe, and Latin America. He has designed, conducted, and managed surveys on a variety of global, national, statewide and local issues. Donoso was a senior survey researcher at the Institute for Social Research at the University of Michigan and Director of the Survey Research Center at the University of Illinois Springfield. A native of Ecuador, he partnered with local and international organizations such as the Constitutional Court of Ecuador and USAID to design and execute research projects on democracy development and rule of law.',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -71,7 +65,7 @@ export default function Team() {
 
         <Container className="relative">
           <div className="bg-white">
-            <div className="mx-auto max-w-7xl">
+            <div className="mx-auto">
               <div className="space-y-12">
                 <div className="mx-auto space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none text-center">
                   <h2 className="font-display text-3xl tracking-tight text-croke sm:text-4xl">Our Team</h2>
@@ -81,7 +75,7 @@ export default function Team() {
                 </div>
                 <ul
                     role="list"
-                    className="flex flex-col items-center space-y-8 md:grid md:grid-cols-5 md:gap-x-8"
+                    className="flex flex-col items-center space-y-8 md:grid md:justify-around md:grid-cols-5 md:gap-x-8"
                 >
                   {people.map((person) => (
                       <li key={person.name}>

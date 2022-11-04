@@ -23,7 +23,7 @@ const features = [
     icon: ComputerDesktopIcon,
   },
   {
-    name: 'Polling',
+    name: 'Polling and Policy Research',
     description: 'We’ll design, conduct, and synthesize survey research to inform your mission and nourish your need for prompt, precise, compelling facts. We will always share results and analysis in plain language to help you make smart, data-driven decisions.',
     icon: ChartBarIcon,
   },
