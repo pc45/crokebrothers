@@ -9,7 +9,7 @@ import {
 const features = [
   {
     name: 'Strategic Communication',
-    description: 'Want to get ahead of a problem? Manage a crisis? React to a difficult event or share good news with the people who need to hear it? We’ll customize a strategy to strengthen your reputation and maximize your impact.',
+    description: 'We harness political, media, technical and diplomatic expertise to help you achieve your mission, vision, values and - where necessary, to out-position and beat your competitors. We’ll make getting ahead of problems, reacting to difficult events and sharing good news look effortless. Let us customize a plan to strengthen your reputation and maximize your impact.”',
     icon: ChatBubbleBottomCenterIcon,
   },
   {
@@ -44,7 +44,7 @@ export default function Services() {
                 Core Services
               </p>
               <p className="mx-auto mt-5 max-w-prose text-xl text-slate-700">
-                Building on two decades of service to government, university, and nonprofit leaders, Croke & Co. can help you navigate any public challenge.
+                Building on decades of service to government, university, and nonprofit leaders, Croke & Co. can help you navigate any public challenge.
               </p>
               <div className="mt-12">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
