@@ -108,28 +108,28 @@ export function Header() {
             </li>
             <li className="ml-12 hidden md:block">
               <Link href="#services">
-                <a className="font-display tracking-widest font-bold text-lg rounded-lg py-1 px-2 text-white hover:bg-croke-200 hover:text-slate-900">
+                <a className="font-display tracking-widest font-bold text-lg rounded-md py-1 px-2 text-white hover:bg-croke-200 hover:text-slate-900">
                   Services
                 </a>
               </Link>
             </li>
             <li className="ml-6 hidden md:block">
               <Link href="#about">
-                <a className="font-display tracking-widest font-bold text-lg rounded-lg py-1 px-2 text-white hover:bg-croke-200 hover:text-slate-900">
+                <a className="font-display tracking-widest font-bold text-lg rounded-md py-1 px-2 text-white hover:bg-croke-200 hover:text-slate-900">
                   About
                 </a>
               </Link>
             </li>
             <li className="ml-6 hidden md:block ">
               <Link href="#contact">
-                <a className="font-display tracking-widest font-bold text-lg rounded-lg py-1 px-2 text-white hover:bg-croke-200 hover:text-slate-900">
+                <a className="font-display tracking-widest font-bold text-lg rounded-md py-1 px-2 text-white hover:bg-croke-200 hover:text-slate-900">
                   Contact Us
                 </a>
               </Link>
             </li>
             <li className="ml-6 hidden md:block ">
               <Link href="#team">
-                <a className="font-display tracking-widest font-bold text-lg rounded-lg py-1 px-2 text-white hover:bg-croke-200 hover:text-slate-900">
+                <a className="font-display tracking-widest font-bold text-lg rounded-md py-1 px-2 text-white hover:bg-croke-200 hover:text-slate-900">
                   Our Team
                 </a>
               </Link>
