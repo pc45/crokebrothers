@@ -83,7 +83,7 @@ export default function Team() {
                   className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-5 lg:gap-x-8"
               >
                 {people.map((person) => (
-                    <li key={person.name} onClick={() => configModal(person.bio, person.name)}>
+                    <li key={person.name} onClick={() => configModal(person.bio, person.name)} className="cursor-pointer">
                       <div className="space-y-4">
                         <div className="aspect-w-9 aspect-h-16">
                           <img className="rounded-md object-cover object-center shadow-lg" src={person.imageUrl.src} alt="" />
@@ -153,7 +153,7 @@ export default function Team() {
                 >
                   <Dialog.Panel className="relative transform overflow-hidden rounded-md bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
                     <div>
-                      <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-croke-300">
+                      <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-croke">
                         <UserIcon className="h-6 w-6 text-white" aria-hidden="true" />
                       </div>
                       <div className="mt-3 text-center sm:mt-5">
@@ -170,7 +170,7 @@ export default function Team() {
                     <div className="mt-5 sm:mt-6">
                       <button
                           type="button"
-                          className="inline-flex w-full justify-center rounded-md border border-transparent bg-croke-300 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-croke-600 focus:outline-none focus:ring-2 focus:ring-croke focus:ring-offset-2 sm:text-sm"
+                          className="inline-flex w-full justify-center rounded-md border border-transparent bg-croke-300 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-croke-600 focus:outline-none focus:ring-0 sm:text-sm"
                           onClick={() => setOpen(false)}
                       >
                         Close
