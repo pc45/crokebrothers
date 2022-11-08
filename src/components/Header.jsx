@@ -124,28 +124,28 @@ export function Header() {
             </li>
             <li className="ml-12 hidden md:block">
               <Link href="#services">
-                <a className="font-display tracking-widest font-bold text-lg rounded-md py-1 px-2 text-white hover:bg-croke-200 hover:text-slate-900">
+                <a className="font-display tracking-tight font-bold text-lg rounded-md p-1 text-white hover:bg-croke-200 hover:text-slate-900">
                   Services
                 </a>
               </Link>
             </li>
-            <li className="ml-6 hidden md:block">
+            <li className="ml-4 hidden md:block">
               <Link href="#about">
-                <a className="font-display tracking-widest font-bold text-lg rounded-md py-1 px-2 text-white hover:bg-croke-200 hover:text-slate-900">
+                <a className="font-display tracking-tight font-bold text-lg rounded-md p-1 text-white hover:bg-croke-200 hover:text-slate-900">
                   About
                 </a>
               </Link>
             </li>
-            <li className="ml-6 hidden md:block ">
+            <li className="ml-4 hidden md:block ">
               <Link href="#contact">
-                <a className="font-display tracking-widest font-bold text-lg rounded-md py-1 px-2 text-white hover:bg-croke-200 hover:text-slate-900">
+                <a className="font-display tracking-tight font-bold text-lg rounded-md p-1 text-white hover:bg-croke-200 hover:text-slate-900">
                   Contact Us
                 </a>
               </Link>
             </li>
-            <li className="ml-6 hidden md:block ">
+            <li className="ml-4 hidden md:block ">
               <Link href="#team">
-                <a className="font-display tracking-widest font-bold text-lg rounded-md py-1 px-2 text-white hover:bg-croke-200 hover:text-slate-900">
+                <a className="font-display tracking-tight font-bold text-lg rounded-md p-1 text-white hover:bg-croke-200 hover:text-slate-900">
                   Our Team
                 </a>
               </Link>
@@ -156,12 +156,12 @@ export function Header() {
           </ul>
         </nav>
         <div className="hidden md:flex">
-          <dl className="text-base text-white flex justify-items-end space-x-4">
+          <dl className="text-base tracking-tight font-display text-white flex justify-items-end space-x-4">
             <div>
               <dt className="sr-only">Phone number</dt>
               <dd className="hover:text-croke-300">
-                <a href="tel:636-336-2428" className="flex justify-center">
-                  <PhoneIcon className="h-6 w-6 flex-shrink-0" aria-hidden="true" />
+                <a href="tel:636-336-2428" className="flex justify-center items-center">
+                  <PhoneIcon className="h-4 w-4 flex-shrink-0" aria-hidden="true" />
                   <span className="ml-3">
                     636-336-2428
                   </span>
@@ -171,8 +171,8 @@ export function Header() {
             <div>
               <dt className="sr-only">Email</dt>
               <dd className="hover:text-croke-300">
-                <a href="mailto:team@crokeand.co" className="flex justify-center">
-                  <EnvelopeIcon className="h-6 w-6 flex-shrink-0" aria-hidden="true" />
+                <a href="mailto:team@crokeand.co" className="flex justify-center items-center">
+                  <EnvelopeIcon className="h-4 w-4 flex-shrink-0" aria-hidden="true" />
                   <span className="ml-3">
                     team@crokeand.co
                   </span>

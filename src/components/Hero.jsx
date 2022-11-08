@@ -12,9 +12,9 @@ export function Hero() {
         </span>{' '}
         Company
       </h1>
-      <h3 className=" text-2xl mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700 font-bold italic">
+      <h2 className=" text-2xl mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700 font-bold italic">
         Problem solving and persuasion in the public interest
-      </h3>
+      </h2>
       <div className="mt-10 flex justify-center space-x-6">
         <ButtonLink href="#contact" className="bg-croke-300">Partner with us</ButtonLink>
         <ButtonLink
