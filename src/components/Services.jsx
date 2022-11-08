@@ -50,15 +50,15 @@ export default function Services() {
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               {features.map((feature) => (
                   <div key={feature.name} className="pt-6 flex flex-col">
-                    <div className="rounded-md bg-slate-100 px-6 pb-8 flex-1">
+                    <div className="rounded-md bg-slate-100 px-6 pb-8 flex-1 shadow-md">
                       <div className="-mt-6">
                         <div>
                           <span className="inline-flex items-center justify-center rounded-md bg-croke-300 p-3 shadow-lg">
                             <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
                           </span>
                         </div>
-                        <h3 className="mt-8 text-lg font-medium tracking-tight text-gray-900">{feature.name}</h3>
-                        <p className="mt-5 text-base text-gray-500">{feature.description}</p>
+                        <h3 className="mt-8 text-lg font-medium text-display tracking-tight text-gray-900">{feature.name}</h3>
+                        <p className="mt-5 text-base text-slate-700">{feature.description}</p>
                       </div>
                     </div>
                   </div>
