@@ -3,6 +3,7 @@ import ryan from '@/images/rc.jpg'
 import simon from '@/images/simon.jpg'
 import kris from '@/images/kris.jpeg'
 import juancarlos from '@/images/juan-carlos-donoso.jpg'
+import pete from '@/images/pete.jpg'
 import {Container} from "@/components/Container";
 import {Dialog, Transition} from "@headlessui/react";
 import {UserIcon} from "@heroicons/react/24/outline";
@@ -47,8 +48,8 @@ const people = [
   {
     name: 'Pete Croke',
     role: 'Partner - Web',
-    imageUrl: ryan,
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id porta nisi, eget efficitur nibh. Etiam sit amet nibh vitae arcu pretium feugiat ut at tellus. Morbi turpis ante, dictum eget venenatis vitae, pulvinar sit amet ex. Nulla eu neque tempus, volutpat lorem id, placerat lorem. In interdum, nisi quis euismod mattis, neque erat viverra arcu, at volutpat arcu orci ut est. Maecenas scelerisque urna ex, quis imperdiet est imperdiet et. Pellentesque commodo id ante eget gravida. Suspendisse elementum gravida sem, a accumsan neque suscipit nec. Praesent non malesuada risus, in fermentum lectus. Vestibulum id dolor quis purus ultricies iaculis venenatis ac lacus. Praesent faucibus tempor ultrices. Sed lorem arcu, viverra a fringilla ut, ornare vitae erat. Nunc facilisis nibh erat, eu ornare ex condimentum non. Sed id justo sit amet urna laoreet cursus tempor nec arcu. Integer id arcu quis sem pretium commodo. Ut consectetur lectus nec ipsum euismod, a dignissim urna ultricies.',
+    imageUrl: pete,
+    bio: 'Pete has two decades of web development experience under his belt. Encompassing a wide array of verticals from non profits to enterprise e-commerce clients, he builds solutions that are client-driven and customer focused.',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
