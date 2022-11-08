@@ -16,16 +16,14 @@ const people = [
     role: 'Founder/Partner',
     imageUrl: ryan,
     bio: 'Ryan has served in State government’s highest profile roles and agencies - helping manage and execute highly visible public responsibilities - during periods of turbulence, crisis, and transition. He was central to the development of Illinois\' broadband infrastructure investments for Governor Pat Quinn, and was Chief of Staff inside Illinois’ largest agency, the Department of Human Services, during the administration of Governor JB Pritzker. He is an active civic leader and community volunteer who earned undergrad and masters degrees in communication at the University of Illinois at Urbana-Champaign.',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+    linkedinUrl: 'https://www.linkedin.com/in/ryancroke/',
   },
   {
     name: 'Kris Knight',
     role: 'Partner - Communications',
     imageUrl: kris,
     bio: 'Kristal is a veteran national news commentator and media expert who served as political director for Priorities USA, the largest Democratic super PAC during the 2020 election cycle. A seasoned trainer, Kristal advises candidates running for office and helps organizations develop political engagement programs. The founding executive director for Emerge Tennessee, a Democratic candidate-training program for women seeking public office, she helped elect over 25 women into local, county and state seats. Her career has included local and national campaigns and includes Hillary for America in 2016 and Obama for America in 2012. She earned a master’s degree in International Public Policy from University College London and a BA in Journalism from Howard University.',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+    linkedinUrl: 'https://www.linkedin.com/in/kris-l-knight-334a366/',
   },
   {
     name: 'Simon Edelman',
@@ -34,24 +32,21 @@ const people = [
     bio: 'Simon Edelman is a five-time EMMY-award winning filmmaker with 20 years of experience in\n' +
         'TV, video and photography. \n' +
         'The founder of Syncro Studios, Simon is a versatile video producer with a wide range of marketing, political and advertising industry experience.',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+    linkedinUrl: 'https://www.linkedin.com/in/simonedelman/',
   },
   {
     name: 'Juan Carlos Donoso',
     role: 'Partner - Polling',
     imageUrl: juancarlos,
     bio: 'Juan Carlos is a senior research scientist at the University of Chicago - AP-NORC Center for Public Affairs Research. Donoso is a political scientist whose research focuses on public opinion and political attitudes. He has significant experience managing complex multi-mode surveys in the US, Europe, and Latin America. He has designed, conducted, and managed surveys on a variety of global, national, statewide and local issues. Donoso was a senior survey researcher at the Institute for Social Research at the University of Michigan and Director of the Survey Research Center at the University of Illinois Springfield. A native of Ecuador, he partnered with local and international organizations such as the Constitutional Court of Ecuador and USAID to design and execute research projects on democracy development and rule of law.',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+    linkedinUrl: 'https://www.linkedin.com/in/juan-carlos-donoso-288b27b5/',
   },
   {
     name: 'Pete Croke',
     role: 'Partner - Web',
     imageUrl: pete,
     bio: 'Pete has two decades of web development experience under his belt. Encompassing a wide array of verticals spanning everything from non profits to enterprise e-commerce, he builds solutions that are client-driven and customer focused. Whether you need to fine tune an existing website or build something from scratch, Pete has the technical expertise to get you where you want to be',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+    linkedinUrl: 'https://www.linkedin.com/in/pete-croke/',
   },
 ]
 
@@ -85,45 +80,38 @@ export default function Team() {
                   className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-5 lg:gap-x-8"
               >
                 {people.map((person) => (
-                    <li key={person.name} onClick={() => configModal(person.bio, person.name)} className="cursor-pointer">
+                    <li key={person.name}>
                       <div className="space-y-4">
                         <div className="aspect-w-9 aspect-h-16">
                           <Image
                               src={person.imageUrl.src}
                               layout="fill"
                               objectFit="cover" // change to suit your needs
-                              className="rounded-md object-center shadow-lg"
+                              className="rounded-md object-center shadow-lg cursor-pointer"
                               alt={person.name}
+                              onClick={() => configModal(person.bio, person.name)}
                           />
                         </div>
 
                         <div className="space-y-2">
                           <div className="space-y-1">
-                            <h3 className="text-slate-700 text-xl text-base">{person.name}</h3>
+                            <div className="flex justify-between">
+                              <h3 className="text-slate-700 text-md text-base">{person.name}</h3>
+                              <div>
+                                <a href={person.linkedinUrl} target="_blank" className="text-croke hover:text-croke-300">
+                                  <span className="sr-only">LinkedIn</span>
+                                  <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        fillRule="evenodd"
+                                        d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                                        clipRule="evenodd"
+                                    />
+                                  </svg>
+                                </a>
+                              </div>
+                            </div>
                             <p className="font-display text-md tracking-tight text-croke">{person.role}</p>
                           </div>
-                          <ul role="list" className="flex space-x-5">
-                            <li>
-                              <a href={person.linkedinUrl} className="text-croke hover:text-croke-300">
-                                <span className="sr-only">LinkedIn</span>
-                                <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                                  <path
-                                      fillRule="evenodd"
-                                      d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                                      clipRule="evenodd"
-                                  />
-                                </svg>
-                              </a>
-                            </li>
-                            <li>
-                              <a href={person.twitterUrl} className="text-croke hover:text-croke-300">
-                                <span className="sr-only">Twitter</span>
-                                <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                                  <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                                </svg>
-                              </a>
-                            </li>
-                          </ul>
                         </div>
                       </div>
                     </li>
