@@ -2,7 +2,7 @@ import React, { useState, Fragment } from "react";
 import ryan from '@/images/rc.jpg'
 import simon from '@/images/simon.jpg'
 import kris from '@/images/kris.jpeg'
-import juancarlos from '@/images/juancarlos.jpeg'
+import juancarlos from '@/images/juan-carlos-donoso.jpg'
 import {Container} from "@/components/Container";
 import {Dialog, Transition} from "@headlessui/react";
 import {UserIcon} from "@heroicons/react/24/outline";
@@ -76,7 +76,7 @@ export default function Team() {
               <div className="space-y-5 sm:space-y-4 text-center">
                 <h2 className="font-display text-3xl tracking-tight text-croke sm:text-4xl">Our Team</h2>
                 <p className="text-xl max-w-prose text-slate-700 mx-auto">
-                  We devote ourselves to client success. This starts by bringing common sense - along with uncommon creativity and kindness - to every project.
+                  Varied backgrounds; one goal: your success. This starts by applying common sense - along with uncommon creativity and empathy - to every project.
                 </p>
               </div>
               <ul
