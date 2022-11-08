@@ -50,7 +50,7 @@ export default function Services() {
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               {features.map((feature) => (
                   <div key={feature.name} className="pt-6 flex flex-col">
-                    <div className="rounded-md bg-gray-50 px-6 pb-8 flex-1">
+                    <div className="rounded-md bg-slate-100 px-6 pb-8 flex-1">
                       <div className="-mt-6">
                         <div>
                           <span className="inline-flex items-center justify-center rounded-md bg-croke-300 p-3 shadow-lg">
