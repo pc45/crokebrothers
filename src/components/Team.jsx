@@ -72,7 +72,7 @@ export default function Team() {
               <div className="space-y-5 sm:space-y-4 text-center">
                 <h2 className="font-display text-3xl tracking-tight text-croke sm:text-4xl">Our Team</h2>
                 <p className="text-xl max-w-prose text-slate-700 mx-auto">
-                  Varied backgrounds; one goal: your success. This starts by applying common sense - along with uncommon creativity and empathy - to every project.
+                  Varied backgrounds; one goal: your success. This starts by applying common sense - along with uncommon creativity, focus, and empathy - to every project.
                 </p>
               </div>
               <ul

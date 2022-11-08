@@ -23,6 +23,11 @@ export default function Document(props) {
         />
       </Head>
       <body className="flex h-full flex-col">
+      <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=G-VBKDKMP3DW" height="0" width="0" style="display: none; visibility: hidden;" />`,
+          }}
+      />
         <Main />
         <NextScript />
       </body>

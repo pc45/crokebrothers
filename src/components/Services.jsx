@@ -44,7 +44,7 @@ export default function Services() {
                 Core Services
               </p>
               <p className="mx-auto mt-5 max-w-prose text-xl text-slate-700">
-                Building on decades of service to government, university, business, and association leaders, Croke & Co. can help you cut through nonsense and noise - to create and amplify your successes, widen your reach, and navigate any public challenge.
+                Building on decades of service to government, university, business, and association leaders, Croke & Co. cuts through nonsense and noise - to  widen your reach, amplify your successes, and help you navigate any public challenge.
               </p>
               <div className="mt-12">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
