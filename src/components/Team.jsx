@@ -6,12 +6,13 @@ import juancarlos from '@/images/juancarlos.jpeg'
 import {Container} from "@/components/Container";
 import {Dialog, Transition} from "@headlessui/react";
 import {UserIcon} from "@heroicons/react/24/outline";
+import Image from 'next/image'
 
 
 const people = [
   {
     name: 'Ryan Croke',
-    role: 'CEO',
+    role: 'Founder/Partner',
     imageUrl: ryan,
     bio: 'Ryan has served in State government’s highest profile roles and agencies - helping manage and execute highly visible public responsibilities - during periods of turbulence, crisis, and transition. He was central to the development of Illinois\' broadband infrastructure investments for Governor Pat Quinn, and was Chief of Staff inside Illinois’ largest agency, the Department of Human Services, during the administration of Governor JB Pritzker. He is an active civic leader and community volunteer who earned undergrad and masters degrees in communication at the University of Illinois at Urbana-Champaign.',
     twitterUrl: '#',
@@ -86,7 +87,13 @@ export default function Team() {
                     <li key={person.name} onClick={() => configModal(person.bio, person.name)} className="cursor-pointer">
                       <div className="space-y-4">
                         <div className="aspect-w-9 aspect-h-16">
-                          <img className="rounded-md object-cover object-center shadow-lg" src={person.imageUrl.src} alt="" />
+                          {/* <img className="rounded-md object-cover object-center shadow-lg" src={person.imageUrl.src} alt="" /> */ }
+                          <Image
+                              src={person.imageUrl.src}
+                              layout="fill"
+                              objectFit="cover" // change to suit your needs
+                              className="rounded-md object-center shadow-lg"
+                          />
                         </div>
 
                         <div className="space-y-2">
