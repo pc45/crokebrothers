@@ -58,7 +58,7 @@ export function Footer() {
         <div className="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
           <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
             {navigation.main.map((item) => (
-                <div key={item.name} className="px-5 py-2">
+                <div key={item.name} className="px-2 py-2">
                   <a href={item.href} className="text-base text-croke hover:text-croke-300">
                     {item.name}
                   </a>
