@@ -49,7 +49,7 @@ const people = [
     name: 'Pete Croke',
     role: 'Partner - Web',
     imageUrl: pete,
-    bio: 'Pete has two decades of web development experience under his belt. Encompassing a wide array of verticals from non profits to enterprise e-commerce clients, he builds solutions that are client-driven and customer focused.',
+    bio: 'Pete has two decades of web development experience under his belt. Encompassing a wide array of verticals spanning everything from non profits to enterprise e-commerce, he builds solutions that are client-driven and customer focused.',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
