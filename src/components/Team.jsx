@@ -87,12 +87,12 @@ export default function Team() {
                     <li key={person.name} onClick={() => configModal(person.bio, person.name)} className="cursor-pointer">
                       <div className="space-y-4">
                         <div className="aspect-w-9 aspect-h-16">
-                          {/* <img className="rounded-md object-cover object-center shadow-lg" src={person.imageUrl.src} alt="" /> */ }
                           <Image
                               src={person.imageUrl.src}
                               layout="fill"
                               objectFit="cover" // change to suit your needs
                               className="rounded-md object-center shadow-lg"
+                              alt={person.name}
                           />
                         </div>
 
