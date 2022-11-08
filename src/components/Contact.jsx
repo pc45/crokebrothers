@@ -181,7 +181,7 @@ export default function Contact() {
                   >
                     <span className="block truncate text-xs py-2">
                       {selectedServices.length < 1
-                          ? "Select from the following options"
+                          ? "Select any of the following options"
                           : `You selected: ${selectedServices}`}
                     </span>
                     <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
@@ -268,7 +268,7 @@ export default function Contact() {
                     </div>
                     <div className="sm:col-span-6">
                       <label htmlFor="about" className="block text-sm font-medium text-white">
-                        What do we need to know?
+                        Any quick background you want to share?
                       </label>
                       <div className="mt-1">
                         <textarea

@@ -8,7 +8,7 @@ import {
 
 const features = [
   {
-    name: 'Strategic Communication',
+    name: 'Strategic and Crisis Communication',
     description: 'We harness political, media, technical and diplomatic expertise to help you achieve your mission, vision, values and - where necessary, to out-position and beat your competitors. We’ll make getting ahead of problems, reacting to difficult events and sharing good news look effortless. Let us customize a plan to strengthen your reputation and maximize your impact.',
     icon: ChatBubbleBottomCenterIcon,
   },
