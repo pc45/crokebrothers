@@ -267,7 +267,7 @@ export default function Contact() {
                       </div>
                     </div>
                     <div className="sm:col-span-6">
-                      <label htmlFor="about" className="block text-sm font-medium text-white">
+                      <label htmlFor="message" className="block text-sm font-medium text-white">
                         Any questions or quick background you’d like to share?
                       </label>
                       <div className="mt-1">
