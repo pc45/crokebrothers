@@ -83,6 +83,22 @@ function MobileNavigation() {
                     <a className="block w-full">Our Team</a>
                   </Link>
                 </li>
+                <li>
+                  <a href="tel:636-336-2428" className="flex items-center">
+                    <PhoneIcon className="h-6 w-6 flex-shrink-0" aria-hidden="true" />
+                    <span className="ml-3">
+                    636-336-2428
+                  </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:team@crokeand.co" className="flex items-center">
+                    <EnvelopeIcon className="h-6 w-6 flex-shrink-0" aria-hidden="true" />
+                    <span className="ml-3">
+                    team@crokeand.co
+                  </span>
+                  </a>
+                </li>
               </Popover.Panel>
             </Transition.Child>
           </Transition.Root>
