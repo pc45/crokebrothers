@@ -74,7 +74,7 @@ export default function Team() {
             <div className="space-y-12">
               <div className="space-y-5 sm:space-y-4 text-center">
                 <h2 className="font-display text-3xl tracking-tight text-croke sm:text-4xl">Our Team</h2>
-                <p className="text-xl max-w-xl text-slate-700 mx-auto">
+                <p className="text-xl max-w-prose text-slate-700 mx-auto">
                   We devote ourselves to client success. This starts by bringing common sense - along with uncommon creativity and kindness - to every project.
                 </p>
               </div>
