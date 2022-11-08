@@ -92,10 +92,10 @@ function MobileNavigation() {
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:team@crokeand.co" className="flex items-center">
+                  <a href="mailto:team@crokeandco.com" className="flex items-center">
                     <EnvelopeIcon className="h-6 w-6 flex-shrink-0" aria-hidden="true" />
                     <span className="ml-3">
-                    team@crokeand.co
+                    team@crokeandco.com
                   </span>
                   </a>
                 </li>

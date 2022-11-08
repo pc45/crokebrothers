@@ -132,7 +132,7 @@ export default function Team() {
           </div>
         </div>
         </Container>
-        { /* <Modal { ...{ bio, open} } /> */ }
+
         <Transition.Root show={open} as={Fragment}>
           <Dialog as="div" className="relative z-10" onClose={setOpen}>
             <Transition.Child
