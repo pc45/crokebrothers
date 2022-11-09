@@ -13,7 +13,7 @@ import Image from 'next/image'
 const people = [
   {
     name: 'Ryan Croke',
-    role: 'Founder/Partner',
+    role: 'Founder',
     imageUrl: ryan,
     bio: 'Ryan has served in State government’s highest profile roles and agencies - helping manage and execute highly visible public responsibilities - during periods of turbulence, crisis, and transition. He was central to the development of Illinois\' broadband infrastructure investments for Governor Pat Quinn, and was Chief of Staff inside Illinois’ largest agency, the Department of Human Services, during the administration of Governor JB Pritzker. He is an active civic leader and community volunteer who earned undergrad and masters degrees in communication at the University of Illinois at Urbana-Champaign.',
     linkedinUrl: 'https://www.linkedin.com/in/ryancroke/',
@@ -45,7 +45,8 @@ const people = [
     name: 'Pete Croke',
     role: 'Partner - Web',
     imageUrl: pete,
-    bio: 'Pete has two decades of web development experience under his belt. Encompassing a wide array of verticals spanning everything from non profits to enterprise e-commerce, he builds solutions that are client-driven and customer focused. Whether you need to fine tune an existing website or build something from scratch, Pete has the technical expertise to get you where you want to be',
+    bio: 'Pete has two decades of web development experience under his belt. Encompassing a wide array of verticals spanning everything from non profits to enterprise e-commerce, he builds solutions that are accessible, performant, client-driven, and user-focused. Whether you need to fine tune an existing website or build from the ground up, Pete has the technical and creative expertise and connections to complete any website on time\n' +
+        'and under budget.',
     linkedinUrl: 'https://www.linkedin.com/in/pete-croke/',
   },
 ]
