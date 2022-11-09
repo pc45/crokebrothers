@@ -9,7 +9,7 @@ import {
 const features = [
   {
     name: 'Strategic and Crisis Communication',
-    description: 'We harness policy, political, media, technical, and human expertise to help you achieve your mission. We customize persuasion plans, build coalitions, and strengthen reputations. Where necessary, we’ll work with you to out-position and beat your competitors. We make getting ahead of problems, reacting to difficult events and sharing good news look effortless.',
+    description: 'Persuasion is our purpose. Want to share good news or get ahead of a looming concern? Whether you need to build a coalition, sell a product, or strengthen a reputation, we will customize a strategic plan - so you can stay focused on what matters most.',
     icon: ChatBubbleBottomCenterIcon,
   },
   {
@@ -44,7 +44,7 @@ export default function Services() {
                 Core Services
               </p>
               <p className="mx-auto mt-5 max-w-prose text-xl text-slate-700">
-                Building on decades of service to government, university, business, and association leaders, Croke & Co. cuts through nonsense and noise - to  widen your reach, amplify your successes, and help you navigate any public challenge.
+                Building on decades of service to government, university, business, and association leaders, we cut through nonsense and noise - to widen your reach, amplify your successes, and prepare you to navigate any public challenge.
               </p>
               <div className="mt-12">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
