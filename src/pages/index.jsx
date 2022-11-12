@@ -12,11 +12,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Croke &amp; Co</title>
+        <title>Croke &amp; Company</title>
         <meta
           name="description"
-          content="CROKE & COMPANY exists to support public interest causes and progressive campaigns. We harness decades of strategic public communications, video production and web development services to help our clients thrive."
+          content="CROKE & COMPANY exists to support public interest causes and progressive campaigns."
         />
+        <link rel='canonical' href="https://www.crokeandco.com" />
         <link rel="shortcut icon" href="/images/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png"/>
