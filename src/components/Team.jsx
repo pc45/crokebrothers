@@ -68,7 +68,7 @@ export default function Team() {
       >
         <Container>
           <div className="bg-white">
-          <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 lg:py-24">
+          <div className="mx-auto max-w-7xl">
             <div className="space-y-12">
               <div className="space-y-5 sm:space-y-4 text-center">
                 <h2 className="font-display text-3xl tracking-tight text-croke sm:text-4xl">Our Team</h2>
