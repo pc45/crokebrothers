@@ -15,7 +15,7 @@ export function About() {
             About
           </p>
           <p className=" mt-4 text-lg tracking-tight text-slate-700">
-            Croke &;amp Company is a strategic communications company dedicated to the public interest and the common good. We help causes, companies, and campaigns thrive. We harness all the policy, political, media, technical, and human expertise we can muster to build a better, safer, more inclusive world.
+            Croke &amp; Company is a strategic communications company dedicated to the public interest and the common good. We help causes, companies, and campaigns thrive. We harness all the policy, political, media, technical, and human expertise we can muster to build a better, safer, more inclusive world.
           </p>
         </div>
       </Container>
