@@ -8,7 +8,7 @@ import {
 const features = [
   {
     name: 'Strategic & Crisis Communication',
-    description: 'Persuasion is our purpose. Want to share good news or get ahead of a looming concern? Whether you need to build a coalition, sell a product, or strengthen a reputation, we will customize a strategic plan - so you can stay focused on what matters most.',
+    description: 'Persuasion is our purpose. Want to share good news, impact public understanding of an issue, service, or product, or get ahead of a looming concern? Whether you need to build a coalition, change, a reputation, or move an audience, we will customize a strategic plan and simplify its execution - so you can stay focused on what matters most.',
     icon: ChatBubbleBottomCenterIcon,
   },
   {
