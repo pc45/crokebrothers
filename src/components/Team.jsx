@@ -88,7 +88,7 @@ export default function Team() {
                               src={person.imageUrl.src}
                               layout="fill"
                               objectFit="cover" // change to suit your needs
-                              className="rounded-md object-center shadow-lg cursor-pointer"
+                              className="rounded-md object-center shadow-lg cursor-pointer grayscale hover:grayscale-0"
                               alt={person.name}
                               onClick={() => configModal(person.bio, person.name)}
                           />
