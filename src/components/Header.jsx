@@ -67,20 +67,20 @@ function MobileNavigation() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#about">
-                    <a className="block w-full" onClick={() => close()}>
-                      About
-                    </a>
+                  <Link href="#team">
+                    <a className="block w-full" onClick={() => close()}>Our Team</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="#contact">
-                    <a className="block w-full">Contact</a>
+                    <a className="block w-full" onClick={() => close()}>Contact</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#team">
-                    <a className="block w-full">Our Team</a>
+                  <Link href="#about">
+                    <a className="block w-full" onClick={() => close()}>
+                      About
+                    </a>
                   </Link>
                 </li>
                 <li>
@@ -129,10 +129,10 @@ export function Header() {
                 </a>
               </Link>
             </li>
-            <li className="ml-4 hidden md:block">
-              <Link href="#about">
+            <li className="ml-4 hidden md:block ">
+              <Link href="#team">
                 <a className="font-display tracking-tight font-bold text-lg rounded-md p-1 text-white hover:bg-croke-200 hover:text-slate-900">
-                  About
+                  Our Team
                 </a>
               </Link>
             </li>
@@ -143,10 +143,10 @@ export function Header() {
                 </a>
               </Link>
             </li>
-            <li className="ml-4 hidden md:block ">
-              <Link href="#team">
+            <li className="ml-4 hidden md:block">
+              <Link href="#about">
                 <a className="font-display tracking-tight font-bold text-lg rounded-md p-1 text-white hover:bg-croke-200 hover:text-slate-900">
-                  Our Team
+                  About
                 </a>
               </Link>
             </li>

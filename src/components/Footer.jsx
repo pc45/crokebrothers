@@ -6,9 +6,9 @@ import React from "react";
 const navigation = {
   main: [
     { name: 'Services', href: '#services' },
-    { name: 'About', href: '#about' },
-    { name: 'Contact', href: '#contact' },
     { name: 'Team', href: '#team' },
+    { name: 'Contact', href: '#contact' },
+    { name: 'About', href: '#about' },
   ],
   social: [
     {
