@@ -83,12 +83,12 @@ export default function Team() {
                 {people.map((person) => (
                     <li key={person.name}>
                       <div className="space-y-4">
-                        <div className="aspect-w-3 aspect-h-4 md:aspect-w-9 md:aspect-h-16">
+                        <div className="aspect-w-1 aspect-h-1 md:aspect-w-9 md:aspect-h-16">
                           <Image
                               src={person.imageUrl.src}
                               layout="fill"
                               objectFit="cover" // change to suit your needs
-                              className="rounded-md object-center shadow-lg cursor-pointer grayscale hover:grayscale-0"
+                              className="object-top rounded-md md:object-center shadow-lg cursor-pointer grayscale hover:grayscale-0"
                               alt={person.name}
                               onClick={() => configModal(person.bio, person.name)}
                           />
