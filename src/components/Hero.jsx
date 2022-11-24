@@ -13,7 +13,7 @@ export function Hero() {
         Company
       </h1>
       <h2 className=" text-2xl mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700 font-bold italic">
-        Strategic Communication Solutions
+        Problem solving, project management, and persuasion in the public interest
       </h2>
       <div className="mt-10 flex justify-center space-x-6">
         <ButtonLink href="#contact" className="bg-croke-300">Partner with us</ButtonLink>
