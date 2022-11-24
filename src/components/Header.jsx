@@ -110,7 +110,7 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="py-4 bg-croke">
+    <header className="bg-croke">
       <Container className="flex justify-between items-center">
         <nav className="relative z-50 text-sm flex">
           <ul className="flex items-center">
