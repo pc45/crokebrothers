@@ -13,7 +13,7 @@ const features = [
   },
   {
     name: 'Web & Video Production',
-    description: 'We can build your website and its most compelling video content. From initial concepts and design, through site launch and maintenance, we make the creative process painless. If you already have a great web presence but lack strong (or any) video content, we can help. Video is a powerful, proven tool for changing minds, building brands, and generating sales. We transform ideas, announcements, one-pagers, and reports into persuasive video masterpieces for exactly the audiences you want to reach.',
+    description: 'We build intuitive websites and produce compelling video content, and we make the creative process painless. If you already have a web presence but lack strong (or any) video content, we can help. Video is a powerful, proven tool for changing minds, building brands, and generating sales. We transform ideas, announcements, one-pagers, catalogs, and reports into persuasive video masterpieces for exactly the audiences you want to reach.',
     icon: ComputerDesktopIcon,
   },
   {
