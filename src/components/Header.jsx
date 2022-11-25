@@ -73,7 +73,7 @@ function MobileNavigation() {
                 </li>
                 <li>
                   <Link href="#contact">
-                    <a className="block w-full" onClick={() => close()}>Contact</a>
+                    <a className="block w-full" onClick={() => close()}>Work With Us</a>
                   </Link>
                 </li>
                 <li>
@@ -139,7 +139,7 @@ export function Header() {
             <li className="ml-4 hidden md:block ">
               <Link href="#contact">
                 <a className="font-display tracking-tight font-bold text-lg rounded-md p-1 text-white hover:bg-croke-200 hover:text-slate-900">
-                  Contact Us
+                  Work With Us
                 </a>
               </Link>
             </li>
