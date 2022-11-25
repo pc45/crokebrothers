@@ -1,9 +1,13 @@
 import { ButtonLink } from '@/components/Button'
 import { Container } from '@/components/Container'
 
+const divStyle = {
+  backgroundImage: 'url(images/bgtest.jpg)',
+};
+
 export function Hero() {
   return (
-    <Container className="py-20 text-center">
+    <Container className="py-20 text-center bg-cover bg-center px-0">
       <h1 className="mx-auto uppercase max-w-4xl font-display text-5xl font-medium tracking-tight text-croke sm:text-7xl">
         Croke{' '}
         <span className="relative whitespace-nowrap text-croke-300">
@@ -12,8 +16,8 @@ export function Hero() {
         </span>{' '}
         Company
       </h1>
-      <h2 className=" text-2xl mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700 font-bold italic">
-        problem solving, project management, and persuasion
+      <h2 className=" text-2xl mx-auto mt-6 max-w-3xl text-lg tracking-tight text-slate-700 font-bold italic">
+        Public Interest Problem Solving | Project Management | Persuasion
       </h2>
       <div className="mt-10 flex justify-center space-x-6">
         <ButtonLink href="#contact" className="bg-croke-300">Partner with us</ButtonLink>
