@@ -8,7 +8,8 @@ import {
 const features = [
   {
     name: 'Strategic & Crisis Communication',
-    description: 'Persuasion is our purpose. Want to share good news, impact public understanding of an issue, service, or product, or get ahead of a looming concern? Whether you need to build a coalition, change, a reputation, or move an audience, we will customize a strategic plan and simplify its execution - so you can stay focused on what matters most.',
+    description: 'Coaching, Strategic & Crisis Communication\n' +
+        'We offer advice and expertise to inform action and decisionmaking, and can lead workshops and training for executives and boards to help navigate your priorities. Want to share good news, impact public understanding of an issue, service, or product, or get ahead of a looming concern? Whether you need to build a coalition, change, a reputation, or move an audience, we will customize a strategic plan and simplify its execution - so you can stay focused on what matters most.',
     icon: ChatBubbleBottomCenterIcon,
   },
   {
@@ -18,7 +19,7 @@ const features = [
   },
   {
     name: 'Polling & Policy Research',
-    description: 'We’ll design, conduct, and synthesize survey research to inform your mission and nourish your need for prompt, precise, compelling facts. We always share results and analysis in plain language to help you make smart, data-driven decisions. We can also use this work to strengthen your own proposals - whether it’s a pitch, grant application, or other competitive process.',
+    description: 'We’ll design, conduct, and synthesize survey research to inform your mission and nourish your need for prompt, precise, compelling facts. We always share results and analysis in plain language to help you make smart, data-driven decisions. We can also use this work to strengthen your own proposals - whether it’s a pitch, grant application, or other competitive process. Public Policy subject matter expertise includes: Health and Human Services; Public Infrastructure; Higher Education; Safety and Emergency Response.',
     icon: ChartBarIcon,
   },
 ]
