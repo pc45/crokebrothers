@@ -171,10 +171,10 @@ export function Header() {
             <div>
               <dt className="sr-only">Email</dt>
               <dd className="hover:text-croke-300">
-                <a href="mailto:team@crokeand.co" className="flex justify-center items-center">
+                <a href="mailto:team@crokeandco.com" className="flex justify-center items-center">
                   <EnvelopeIcon className="h-4 w-4 flex-shrink-0" aria-hidden="true" />
                   <span className="ml-3">
-                    team@crokeand.co
+                    team@crokeandco.com
                   </span>
                 </a>
               </dd>
