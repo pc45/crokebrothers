@@ -27,7 +27,7 @@ const people = [
   },*/
   {
     name: 'Simon Edelman',
-    role: 'Partner - Video',
+    role: 'Video Production',
     imageUrl: simon,
     bio: 'Simon Edelman is a five-time EMMY-award winning filmmaker with 20 years of experience in\n' +
         'TV, video and photography. \n' +
@@ -43,7 +43,7 @@ const people = [
   },*/
   {
     name: 'Pete Croke',
-    role: 'Partner - Web',
+    role: 'Web Services',
     imageUrl: pete,
     bio: 'Pete has two decades of web development experience under his belt. Encompassing a wide array of verticals spanning everything from non profits to enterprise e-commerce, he builds solutions that are accessible, performant, client-driven, and user-focused. Whether you need to fine tune an existing website or build from the ground up, Pete has the technical and creative expertise and connections to complete any website on time\n' +
         'and under budget.',
@@ -78,7 +78,7 @@ export default function Team() {
               </div>
               <ul
                   role="list"
-                  className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-5 lg:gap-x-8"
+                  className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-5 lg:gap-x-8 "
               >
                 {people.map((person) => (
                     <li key={person.name}>
