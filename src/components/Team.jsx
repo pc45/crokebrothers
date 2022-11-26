@@ -15,7 +15,7 @@ const people = [
     name: 'Ryan Croke',
     role: 'Founder',
     imageUrl: ryan,
-    bio: 'Ryan has served in State government’s highest profile roles and agencies - helping manage and execute highly visible public responsibilities - during periods of turbulence, crisis, and transition. He was central to the development of Illinois\' broadband infrastructure investments for Governor Pat Quinn, and was Chief of Staff inside Illinois’ largest agency, the Department of Human Services, during the administration of Governor JB Pritzker. He is an active civic leader and community volunteer who earned undergrad and masters degrees in communication at the University of Illinois at Urbana-Champaign.',
+    bio: 'Ryan worked in State government’s highest profile roles and agencies through times of turbulence, crisis, and transition. As Chief of Staff inside Illinois’ largest agency during the administration of Governor JB Pritzker, he developed expertise in a wide range of pandemic-era health and human services issues across the state and country. Before that, he led a statewide association of nonprofits serving people with disabilities and led the Chancellor’s staff at the University of Illinois Springfield. He modernized the executive appointments website, was central to the State’s capital construction and broadband infrastructure investments, and served as a trusted advisor (including as Chief of Staff) to Illinois Governor Pat Quinn. He is the proud father of three kids with his wife Brook, and earned undergrad and masters degrees in communication at the University of Illinois at Urbana-Champaign.',
     linkedinUrl: 'https://www.linkedin.com/in/ryancroke/',
   },
   /*{
