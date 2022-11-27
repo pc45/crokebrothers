@@ -8,12 +8,12 @@ import {
 const features = [
   {
     name: 'Coaching, Strategic & Crisis Communication',
-    description: 'We offer advice and expertise to inform action and decision-making, and can lead workshops and training for executives and boards to help navigate your priorities. Want to share good news, impact public understanding of an issue, service, or product, or get ahead of a looming concern? Whether you need to build a coalition, change, a reputation, or move an audience, we will customize a strategic plan and simplify its execution - so you can stay focused on what matters most.',
+    description: 'We offer advice and expertise to inform action and decision-making, and can lead workshops and training for executives and boards to help tackle your priorities. Want to share good news, impact public understanding of an issue, service, or product, or get ahead of a looming concern? Whether you need to build a coalition, change a reputation, or move an audience, we will customize a strategic plan and simplify its execution - so you can focus on what matters most.',
     icon: ChatBubbleBottomCenterIcon,
   },
   {
     name: 'Web & Video Production',
-    description: 'We build intuitive websites and produce compelling video content, and we make the creative process painless. If you already have a web presence but lack strong (or any) video content, we can help. Video is a powerful, proven tool for changing minds, building brands, and generating sales. We transform ideas, announcements, one-pagers, catalogs, and reports into persuasive video masterpieces for exactly the audiences you want to reach.',
+    description: 'We build intuitive websites and produce persuasive video content, working hard to keep the creative process painless for you. If you already have a web presence but lack strong (or any) video content, we want to help you! Video is a powerful, proven tool for changing minds, building brands, and generating sales. We transform ideas, announcements, one-pagers, catalogs, and reports into persuasive video masterpieces for exactly the audiences you want to reach.',
     icon: ComputerDesktopIcon,
   },
   {
