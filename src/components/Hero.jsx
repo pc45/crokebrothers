@@ -22,7 +22,7 @@ export function Hero() {
       <div className="mt-10 flex justify-center space-x-6">
         <ButtonLink href="#contact" className="bg-croke-300">Partner with us</ButtonLink>
         <ButtonLink
-          href="#"
+          href="https://www.youtube.com/watch?v=HbIFBDoBSSE"
           variant="outline"
         >
           <svg
