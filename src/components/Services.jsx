@@ -13,7 +13,7 @@ const features = [
   },
   {
     name: 'Web & Video Production',
-    description: 'We build intuitive websites and produce persuasive video content, working hard to keep the creative process painless for you. If you already have a web presence but lack strong (or any) video content, we want to help you! Video is a powerful, proven tool for changing minds, building brands, and generating sales. We transform ideas, announcements, one-pagers, catalogs, and reports into persuasive video masterpieces for exactly the audiences you want to reach.',
+    description: 'We build intuitive websites and produce persuasive video content, working hard to keep the creative process painless for you. If you need a functional, beautiful website quickly and affordably, we will make it happen - or if you have a more complex project, we can launch that in close collaboration with your team. And if you have a web presence but lack strong (or any) professional video content, we’ll get it done! Video is a powerful, proven tool for changing minds, building brands, and generating sales. In partnership with Syncro Studios, we transform ideas, announcements, one-pagers, catalogs, and reports into persuasive video masterpieces for exactly the audiences you want to reach.',
     icon: ComputerDesktopIcon,
   },
   {
