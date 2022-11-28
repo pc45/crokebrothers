@@ -7,8 +7,8 @@ import {
 
 const features = [
   {
-    name: 'Coaching, Strategic & Crisis Communication',
-    description: 'We offer advice and expertise to inform action and decision-making, and can lead workshops and training for executives and boards to help tackle your priorities. Want to share good news, impact public understanding of an issue, service, or product, or get ahead of a looming concern? Whether you need to build a coalition, change a reputation, or move an audience, we will customize a strategic plan and simplify its execution - so you can focus on what matters most.',
+    name: 'Strategic & Crisis Communication / Coaching',
+    description: 'Want to share good news, impact public understanding of an issue, introduce a product/service, or get ahead of a looming concern? Whether you need to build a coalition, change a reputation, or move an audience, we will customize a strategic plan and simplify its rollout - so you can focus on what matters most. Bottom line: we bring smart advice and expertise to inform action and decision-making - and we can train you and your team to execute.',
     icon: ChatBubbleBottomCenterIcon,
   },
   {
