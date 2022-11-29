@@ -7,7 +7,7 @@ import {
 
 const features = [
   {
-    name: 'PR / Executive Coaching',
+    name: 'Strategic Communications / Executive Coaching',
     description: 'Want to share good news, impact understanding of an issue, make a memorable introduction, or get ahead of a looming concern? Whether you need to build a coalition, change a reputation, or move an audience, we will customize a strategic plan and simplify its rollout - so you can focus on what matters most. Bottom line: we bring well-considered advice and expertise to inform internal and external communications, action and decision-making - and we can train you and your team to execute. We’re available for crisis consulting, but we are also willing to work with executives and their teams, including boards, to support and facilitate long-term, proactive training, recruitment, performance reviews, and leadership coaching.',
     icon: ChatBubbleBottomCenterIcon,
   },
@@ -18,7 +18,12 @@ const features = [
   },
   {
     name: 'Polling & Policy Research',
-    description: 'We design, conduct, and synthesize survey research to inform your mission and nourish your need for prompt, precise, compelling facts. We always share results and analysis in plain language to help you make smart, data-driven decisions. We can also use this work to strengthen your own proposals - whether it’s a pitch, grant application, or other competitive process. Public Policy subject matter expertise includes: Health and Human Services; Public Infrastructure; Higher Education; Safety and Emergency Response.',
+    description: 'We design, conduct, and synthesize survey research to inform your mission and nourish your need for prompt, precise, compelling facts. We always share results and analysis in plain language to help you make smart, data-driven decisions. We can also use this work to strengthen your own proposals - whether it’s a pitch, grant application, or other competitive process. Public Policy subject matter expertise includes: \n' +
+        'Health and Human Services; ' +
+        'Public Infrastructure; \n' +
+        'Higher Education; \n' +
+        'Labor Relations; \n' +
+        'Safety and Emergency Response.',
     icon: ChartBarIcon,
   },
 ]
