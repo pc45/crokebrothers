@@ -18,13 +18,13 @@ const people = [
     bio: 'Ryan has served in key leadership roles in Illinois through periods of turbulence, crisis, and transition. As Chief of Staff in State government’s largest agency during the administration of Governor JB Pritzker, Ryan developed expertise in a wide range of pandemic-era health and human services issues across the country. Before that, he spearheaded a statewide association of nonprofits serving people with disabilities, and was responsible for campus safety, marketing, PR, HR, and government affairs as Associate Chancellor for Public Affairs the University of Illinois Springfield. From 2006-2015, he was a trusted advisor (including as Chief of Staff) to Illinois Governor Pat Quinn. He is the proud father of three kids with his wife Brook, and earned undergrad and masters degrees in communication at the University of Illinois at Urbana-Champaign.',
     linkedinUrl: 'https://www.linkedin.com/in/ryancroke/',
   },
-  /*{
+  {
     name: 'Kris Knight',
-    role: 'Partner - Communications',
+    role: 'Communications',
     imageUrl: kris,
     bio: 'Kristal is a veteran national news commentator and media expert who served as political director for Priorities USA, the largest Democratic super PAC during the 2020 election cycle. A seasoned trainer, Kristal advises candidates running for office and helps organizations develop political engagement programs. The founding executive director for Emerge Tennessee, a Democratic candidate-training program for women seeking public office, she helped elect over 25 women into local, county and state seats. Her career has included local and national campaigns and includes Hillary for America in 2016 and Obama for America in 2012. She earned a master’s degree in International Public Policy from University College London and a BA in Journalism from Howard University.',
     linkedinUrl: 'https://www.linkedin.com/in/kris-l-knight-334a366/',
-  },*/
+  },
   {
     name: 'Simon Edelman',
     role: 'Video Production',
