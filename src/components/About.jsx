@@ -12,12 +12,12 @@ export function About() {
           </p>
           <p className=" mt-4 text-lg tracking-tight text-slate-700">
             Croke & Company is a strategic communications firm dedicated to the
-            public interest and the common good. We are specially equipped to
-            help progressive causes, companies, and campaigns thrive. We harness
+            public interest and the common good. We cut through nonsense and
+            noise - to widen your reach, amplify your success, and prepare you
+            to navigate any public challenge. We are specially equipped to help
+            progressive causes, companies, and campaigns thrive. We harness our
             shared expertise to help build a better, safer, more inclusive
-            world. We cut through nonsense and noise - to widen your reach,
-            amplify your success, and prepare you to navigate any public
-            challenge.
+            world.
           </p>
           <div className="aspect-w-16 aspect-h-9 mt-12">
             <iframe
