@@ -2,7 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx}',],
+  content: ['./src/**/*.{js,jsx}'],
   theme: {
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
@@ -31,18 +31,18 @@ module.exports = {
         '2xl': '40rem',
       },
       colors: {
-        'croke': {
+        croke: {
           DEFAULT: '#606e07',
-          '50': '#E7FFB8',
-          '100': '#829500',
-          '200': '#BABD00',
-          '300': '#FF6E37',
-          '400': '#3C413C',
-          '500': '#A8FF00',
-          '600': '#fb9067',
-          '700': '#5E8F00',
-          '800': '#395700',
-          '900': '#141F00'
+          50: '#E7FFB8',
+          100: '#829500',
+          200: '#BABD00',
+          300: '#FF6E37',
+          400: '#3C413C',
+          500: '#A8FF00',
+          600: '#fb9067',
+          700: '#5E8F00',
+          800: '#395700',
+          900: '#141F00',
         },
       },
     },
@@ -51,8 +51,8 @@ module.exports = {
     aspectRatio: false,
   },
   plugins: [
-      require('@tailwindcss/forms'),
-      require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+    require('@headlessui/tailwindcss')({ prefix: 'ui' }),
   ],
-
 }
