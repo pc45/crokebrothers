@@ -12,7 +12,7 @@ export function Hero() {
   };
 
   return (
-    <Container className="py-20 text-center bg-cover bg-center px-0">
+    <Container className="py-20 text-center bg-center px-2">
       <h1 className="mx-auto uppercase max-w-4xl font-display text-5xl font-medium tracking-tight text-croke sm:text-7xl">
         Croke{' '}
         <span className="relative whitespace-nowrap text-croke-300">
@@ -22,7 +22,7 @@ export function Hero() {
         Company
       </h1>
       <h2 className=" text-2xl mx-auto mt-6 max-w-3xl text-lg tracking-tight text-slate-700 font-bold italic">
-        Key Insight + Persuasive Content <br />in the Public Interest
+        Policy | Polling | PR
       </h2>
       <div className="mt-10 flex justify-center space-x-6">
         <ButtonLink href="#contact" className="bg-croke-300">Partner with us</ButtonLink>
@@ -40,7 +40,7 @@ export function Hero() {
               <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
                 <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
                 <div className="fixed inset-0 z-10 overflow-y-auto">
-                  <div className="flex min-h-full items-center justify-center text-center sm:items-center">
+                  <div className="flex min-h-full items-center justify-center text-center">
                     <div className="max-w-4xl relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all md:max-w-lg sm:my-8 sm:w-full md:max-w-4xl sm:p-6">
                       <div>
                         <div className="mt-3 text-center">

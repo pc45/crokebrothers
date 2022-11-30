@@ -17,6 +17,12 @@ export function About() {
           <p className=" mt-4 text-lg tracking-tight text-slate-700">
             Croke & Company is a strategic communications company dedicated to the public interest and the common good. We are specially equipped to help progressive causes, companies, and campaigns thrive. We harness all the policy, political, media, technical, and human expertise we can muster to build a better, safer, more inclusive world.
           </p>
+          <div className="mt-12 aspect-w-16 aspect-h-9">
+            <iframe title="vimeo-player"
+                    src="https://player.vimeo.com/video/776358925?h=c94d54bdfd"
+                    width="640" height="360" frameBorder="0"
+                    allowFullScreen></iframe>
+          </div>
         </div>
       </Container>
     </section>

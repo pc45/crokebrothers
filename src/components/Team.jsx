@@ -20,7 +20,7 @@ const people = [
   },
   {
     name: 'Kristal Knight',
-    role: 'Communications',
+    role: 'Strategic Comms',
     imageUrl: kris,
     bio: 'Kristal is a veteran national news commentator and media expert who served as political director for Priorities USA, the largest Democratic super PAC during the 2020 election cycle. A seasoned trainer, Kristal advises candidates running for office and helps organizations develop political engagement programs. The founding executive director for Emerge Tennessee, a Democratic candidate-training program for women seeking public office, she helped elect over 25 women into local, county and state seats. Her career has included local and national campaigns and includes Hillary for America in 2016 and Obama for America in 2012. She earned a master’s degree in International Public Policy from University College London and a BA in Journalism from Howard University.',
     linkedinUrl: 'https://www.linkedin.com/in/kris-l-knight-334a366/',
