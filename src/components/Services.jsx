@@ -47,12 +47,7 @@ export default function Services() {
             <p className="font-display text-3xl tracking-tight text-croke sm:text-4xl">
               Core Services
             </p>
-            <p className="mx-auto mt-5 max-w-prose text-xl text-slate-700">
-              We cut through nonsense and noise - to widen your reach, amplify
-              your success, and prepare you to navigate any public challenge.
-              Our team produces key insight and persuasive content - always in
-              the public interest.
-            </p>
+
             <div className="mt-12">
               <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
                 {features.map((feature) => (

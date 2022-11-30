@@ -19,7 +19,7 @@ export function Hero() {
         Company
       </h1>
       <h2 className=" mx-auto mt-6 max-w-3xl text-2xl text-lg font-bold italic tracking-tight text-slate-700">
-        Policy | Polling | PR
+        Powerful Insight + Persuasive Content in the Public Interest
       </h2>
       <div className="mt-10 flex justify-center space-x-6">
         <button
