@@ -1,32 +1,34 @@
-import React, {useState} from "react";
+import React, { useState } from 'react'
 import { ButtonLink } from '@/components/Button'
 import { Container } from '@/components/Container'
 
-
-
 export function Hero() {
-  const [modal, setModal] = useState(false);
+  const [modal, setModal] = useState(false)
 
   const openModal = () => {
-    setModal(!modal);
-  };
+    setModal(!modal)
+  }
 
   return (
-    <Container className="py-20 text-center bg-center px-2">
-      <h1 className="mx-auto uppercase max-w-4xl font-display text-5xl font-medium tracking-tight text-croke sm:text-7xl">
+    <Container className="bg-center py-20 px-2 text-center">
+      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium uppercase tracking-tight text-croke sm:text-7xl">
         Croke{' '}
         <span className="relative whitespace-nowrap text-croke-300">
-
           <span className="relative">&amp;</span>
         </span>{' '}
         Company
       </h1>
-      <h2 className=" text-2xl mx-auto mt-6 max-w-3xl text-lg tracking-tight text-slate-700 font-bold italic">
+      <h2 className=" mx-auto mt-6 max-w-3xl text-2xl text-lg font-bold italic tracking-tight text-slate-700">
         Policy | Polling | PR
       </h2>
       <div className="mt-10 flex justify-center space-x-6">
-        <ButtonLink href="#contact" className="bg-croke-300">Partner with us</ButtonLink>
-        <button onClick={openModal} className="rounded-full py-2 px-4 bg-croke text-white hover:bg-croke-400 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-croke">
+        <ButtonLink href="#contact" className="bg-croke-300">
+          Partner with us
+        </ButtonLink>
+        <button
+          onClick={openModal}
+          className="rounded-full bg-croke py-2 px-4 text-white hover:bg-croke-400 hover:text-slate-100 focus-visible:outline-croke active:bg-slate-800 active:text-slate-300"
+        >
           <div className="flex items-center">
             <svg
               aria-hidden="true"
@@ -37,37 +39,53 @@ export function Hero() {
             <span className="ml-3 text-sm font-semibold">Watch our video</span>
           </div>
           {modal ? (
-              <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-                <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
-                <div className="fixed inset-0 z-10 overflow-y-auto">
-                  <div className="flex min-h-full items-center justify-center text-center">
-                    <div className="max-w-4xl relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all md:max-w-lg sm:my-8 sm:w-full md:max-w-4xl sm:p-6">
-                      <div>
-                        <div className="mt-3 text-center">
-                          <div className="aspect-w-4 aspect-h-3">
-                            <iframe
-                                src="https://player.vimeo.com/video/266390715?color=0c88dd&title=0&byline=0&portrait=0&badge=0"
-                                width="640" height="360" frameBorder="0"
-                                allow="autoplay; fullscreen; picture-in-picture"
-                                allowFullScreen></iframe>
-                          </div>
-                        </div>
+            <div
+              className="relative z-10"
+              aria-labelledby="modal-title"
+              role="dialog"
+              aria-modal="true"
+            >
+              <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+              <div className="fixed inset-0 z-10 overflow-y-auto">
+                <div className="flex min-h-full items-center justify-center text-center">
+                  <div className="relative z-50 w-full transform overflow-hidden overflow-y-auto rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:h-full sm:w-full sm:p-6 md:max-w-lg md:max-w-4xl">
+                    <div>
+                      <div className="mb-4 flex justify-end text-croke-300">
+                        <svg
+                          onClick={setModal}
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="1.5"
+                          stroke="currentColor"
+                          className="flex h-6 w-6"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                          />
+                        </svg>
                       </div>
-                      <div className="mt-5 sm:mt-6 text-center">
-                        <a onClick={setModal}
-                              href="#"
-                              className="inline-flex w-48 justify-center rounded-md border border-transparent bg-croke-300 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-croke-600 focus:outline-none focus:ring-0 sm:text-sm">
-                          Close
-                        </a>
+
+                      <div className="aspect-w-16 aspect-h-9">
+                        <iframe
+                          src="https://player.vimeo.com/video/266390715?color=0c88dd&title=0&byline=0&portrait=0&badge=0"
+                          width="640"
+                          height="360"
+                          frameBorder="0"
+                          allow="autoplay; fullscreen; picture-in-picture"
+                          allowFullScreen
+                        ></iframe>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
           ) : null}
         </button>
       </div>
-
     </Container>
   )
 }
