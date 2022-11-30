@@ -70,7 +70,7 @@ export default function Services() {
                         <Disclosure>
                           {({ open }) => (
                             <>
-                              <Disclosure.Button className="flex w-full justify-center rounded-lg px-4 py-2 text-left text-sm font-medium focus:outline-none focus-visible:ring focus-visible:ring-croke focus-visible:ring-opacity-75">
+                              <Disclosure.Button className="flex w-full items-center justify-center rounded-lg px-4 py-2 text-left text-lg font-semibold focus:outline-none focus-visible:ring focus-visible:ring-croke focus-visible:ring-opacity-75">
                                 <span>{feature.name}</span>
                                 <ChevronRightIcon
                                   className={`h-6 w-6 ${
