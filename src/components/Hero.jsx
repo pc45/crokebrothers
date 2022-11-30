@@ -22,9 +22,6 @@ export function Hero() {
         Policy | Polling | PR
       </h2>
       <div className="mt-10 flex justify-center space-x-6">
-        <ButtonLink href="#contact" className="bg-croke-300">
-          Partner with us
-        </ButtonLink>
         <button
           onClick={openModal}
           className="rounded-full bg-croke py-2 px-4 text-white hover:bg-croke-400 hover:text-slate-100 focus-visible:outline-croke active:bg-slate-800 active:text-slate-300"
@@ -85,6 +82,9 @@ export function Hero() {
             </div>
           ) : null}
         </button>
+        <ButtonLink href="#contact" className="bg-croke-300">
+          Partner with us
+        </ButtonLink>
       </div>
     </Container>
   )
