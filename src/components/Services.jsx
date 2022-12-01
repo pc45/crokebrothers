@@ -18,7 +18,7 @@ const features = [
   {
     name: 'Web & Video Production',
     description:
-      'We make intuitive websites and persuasive video content, working hard to keep the creative process painless for you. If you need a functional, beautiful website quickly and affordably, we will make it happen - or if you have a more complex project, we can launch that in close collaboration with your team. And if you have a web presence but lack strong (or any) professional video content, we’ll get it done! Video is a powerful, proven tool for changing minds, building brands, and generating sales. In partnership with Syncro Studios, we transform ideas, announcements, one-pagers, catalogs, and reports into persuasive video masterpieces for exactly the audiences you want to reach.',
+      'We build intuitive websites and persuasive video content, working hard to keep the creative process painless for you. Whether you need a functional, beautiful website quickly, or something more complex, we’ll bring your project to a successful launch. If you have a web presence but lack strong (or any) professional video content, call us! With Syncro Studios, we transform your ideas, announcements, one-pagers, catalogs, and reports into video masterpieces and can help you deliver them precisely to the audiences you need to reach.',
     icon: ComputerDesktopIcon,
   },
   {
@@ -66,7 +66,9 @@ export default function Services() {
                           {({ open }) => (
                             <>
                               <Disclosure.Button className="leading- flex w-full items-center justify-center rounded-lg px-4 py-2 text-left text-xl font-bold tracking-wide focus:outline-none focus-visible:ring focus-visible:ring-croke focus-visible:ring-opacity-75">
-                                <span>{feature.name}</span>
+                                <span className="font-display">
+                                  {feature.name}
+                                </span>
                                 <ChevronRightIcon
                                   className={`h-6 w-6 ${
                                     open ? 'rotate-90 transform' : ''
