@@ -10,15 +10,15 @@ import { ChevronRightIcon } from '@heroicons/react/20/solid'
 
 const features = [
   {
-    name: 'Strategic Comms, Coaching & Training',
+    name: 'Strategic Comms & Coaching',
     description:
-      'Want to share good news, impact understanding of an issue, make a memorable introduction, or get ahead of a looming concern? Whether you need to build a coalition, change a reputation, or move an audience, we will customize a strategic plan and simplify its rollout - so you can focus on what matters most. Bottom line: we bring well-considered advice and expertise to inform internal and external communications, action and decision-making - and we can train you and your team to execute. We’re available for crisis consulting, but we are also willing to work with executives and their teams, including boards, to support and facilitate long-term, proactive training, recruitment, performance reviews, and leadership coaching.',
+      'Want to share good news, get ahead of bad news, or improve understanding of an important topic? Whether you need to build a coalition, change a reputation, or move an audience, call us. We customize strategic plans and make rollout simple - so you can focus on what matters most. We bring well-considered advice and expertise on media relations, stakeholder outreach, and internal communication to help you take the best course of action. We’re available for crisis consulting, and we are also willing to work with executives and their teams, including boards, to support and facilitate long-term, proactive training, recruitment, and leadership coaching.',
     icon: ChatBubbleBottomCenterIcon,
   },
   {
     name: 'Web & Video Production',
     description:
-      'We build intuitive websites and persuasive video content, working hard to keep the creative process painless for you. Whether you need a functional, beautiful website quickly, or something more complex, we’ll bring your project to a successful launch. If you have a web presence but lack strong (or any) professional video content, call us! With Syncro Studios, we transform your ideas, announcements, one-pagers, catalogs, and reports into video masterpieces and can help you deliver them precisely to the audiences you need to reach.',
+      'We build intuitive websites and produce persuasive video content, working hard to keep the creative process painless for you. Whether you need a functional, beautiful website quickly, or something more complex, we’ll bring your project to a successful launch. If you have a web presence but lack strong (or any) professional video content, call us! With Syncro Studios, we transform your ideas, announcements, one-pagers, catalogs, and reports into video masterpieces and can help you deliver them precisely to the audiences you need to reach.',
     icon: ComputerDesktopIcon,
   },
   {
