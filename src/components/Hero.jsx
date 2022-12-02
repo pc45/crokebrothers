@@ -83,7 +83,7 @@ export function Hero() {
           ) : null}
         </button>
         <ButtonLink href="#contact" className="bg-croke-300">
-          Partner with us
+          Work with us
         </ButtonLink>
       </div>
     </Container>
