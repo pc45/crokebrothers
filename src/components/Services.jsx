@@ -10,9 +10,9 @@ import { ChevronRightIcon } from '@heroicons/react/20/solid'
 
 const features = [
   {
-    name: 'Strategic Comms & Coaching',
+    name: 'Strategy & PR',
     description:
-      'Want to share good news, get ahead of bad news, or improve understanding of an important topic? Whether you need to build a coalition, change a reputation, or move an audience, call us. We customize strategic plans and make rollout simple - so you can focus on what matters most. We bring well-considered advice and expertise on media relations, stakeholder outreach, and internal communication to help you take the best course of action. We’re available for crisis consulting, and we are also willing to work with executives and their teams, including boards, to support and facilitate long-term, proactive training, recruitment, and leadership coaching.',
+      'Want to share good news, troubleshoot bad news, or improve public understanding of an important topic? Whether you need to build a coalition, manage a reputation, or move an audience, call us. We provide straightforward, well-informed advice to help you chart a smart, swift, shrewd course of action, no matter the issue. We bring broad, deep expertise in media relations, stakeholder outreach, internal communication, crisis management, news conference/interview/debate prep, training and coaching for executives, boards, and teams.',
     icon: ChatBubbleBottomCenterIcon,
   },
   {
@@ -62,25 +62,35 @@ export default function Services() {
                             />
                           </span>
                         </div>
-                        <Disclosure>
-                          {({ open }) => (
-                            <>
-                              <Disclosure.Button className="leading- flex w-full items-center justify-center rounded-lg px-4 py-2 text-left text-xl font-bold tracking-wide focus:outline-none focus-visible:ring focus-visible:ring-croke focus-visible:ring-opacity-75">
-                                <span className="font-display">
-                                  {feature.name}
-                                </span>
-                                <ChevronRightIcon
-                                  className={`h-6 w-6 ${
-                                    open ? 'rotate-90 transform' : ''
-                                  } `}
-                                />
-                              </Disclosure.Button>
-                              <Disclosure.Panel className="px-4 pt-4 pb-2 text-left text-sm text-slate-700 md:text-center">
-                                {feature.description}
-                              </Disclosure.Panel>
-                            </>
-                          )}
-                        </Disclosure>
+                        <div className="md:hidden">
+                          <Disclosure>
+                            {({ open }) => (
+                              <>
+                                <Disclosure.Button className="leading- flex w-full items-center justify-center rounded-lg px-4 py-2 text-left text-xl font-bold tracking-wide focus:outline-none focus-visible:ring focus-visible:ring-croke focus-visible:ring-opacity-75">
+                                  <span className="font-display">
+                                    {feature.name}
+                                  </span>
+                                  <ChevronRightIcon
+                                    className={`h-6 w-6 ${
+                                      open ? 'rotate-90 transform' : ''
+                                    } `}
+                                  />
+                                </Disclosure.Button>
+                                <Disclosure.Panel className="px-4 pt-4 pb-2 text-left text-sm text-slate-700 md:text-center">
+                                  {feature.description}
+                                </Disclosure.Panel>
+                              </>
+                            )}
+                          </Disclosure>
+                        </div>
+                        <div className="hidden md:block">
+                          <h3 className="mt-8 font-display text-xl font-bold tracking-wide text-gray-900">
+                            {feature.name}
+                          </h3>
+                          <p className="mt-5 text-base text-slate-700">
+                            {feature.description}
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
