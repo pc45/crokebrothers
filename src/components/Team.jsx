@@ -44,7 +44,7 @@ const people = [
   },*/
   {
     name: 'Justin Cajindos',
-    role: 'Policy & Politics',
+    role: 'Policy and Strategy',
     imageUrl: justin,
     bio: '',
     linkedinUrl: 'https://www.linkedin.com/in/justin-cajindos-22766322/',
