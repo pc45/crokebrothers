@@ -1,14 +1,14 @@
-import React, { useState, Fragment } from "react";
+import React, { useState, Fragment } from 'react'
 import ryan from '@/images/rc.jpg'
 import simon from '@/images/simon.jpg'
 import kris from '@/images/kris.jpeg'
+import justin from '@/images/Justin Cajindos_2020.jpg'
 import juancarlos from '@/images/juan-carlos-donoso.jpg'
 import pete from '@/images/pete.jpg'
-import {Container} from "@/components/Container";
-import {Dialog, Transition} from "@headlessui/react";
-import {UserIcon} from "@heroicons/react/24/outline";
+import { Container } from '@/components/Container'
+import { Dialog, Transition } from '@headlessui/react'
+import { UserIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
-
 
 const people = [
   {
@@ -29,9 +29,10 @@ const people = [
     name: 'Simon Edelman',
     role: 'Video Production',
     imageUrl: simon,
-    bio: 'Simon Edelman is a five-time EMMY-award winning filmmaker with 20 years of experience in\n' +
-        'TV, video and photography. \n' +
-        'The founder of Syncro Studios, Simon is a versatile video producer with a wide range of marketing, political and advertising industry experience.',
+    bio:
+      'Simon Edelman is a five-time EMMY-award winning filmmaker with 20 years of experience in\n' +
+      'TV, video and photography. \n' +
+      'The founder of Syncro Studios, Simon is a versatile video producer with a wide range of marketing, political and advertising industry experience.',
     linkedinUrl: 'https://www.linkedin.com/in/simonedelman/',
   },
   /*{
@@ -42,11 +43,19 @@ const people = [
     linkedinUrl: 'https://www.linkedin.com/in/juan-carlos-donoso-288b27b5/',
   },*/
   {
+    name: 'Justin Cajindos',
+    role: 'Policy & Politics',
+    imageUrl: justin,
+    bio: '',
+    linkedinUrl: 'https://www.linkedin.com/in/justin-cajindos-22766322/',
+  },
+  {
     name: 'Pete Croke',
     role: 'Web Services',
     imageUrl: pete,
-    bio: 'Pete has two decades of web development experience under his belt. Encompassing a wide array of verticals spanning everything from non profits to enterprise e-commerce, he builds solutions that are accessible, performant, client-driven, and user-focused. Whether you need to fine tune an existing website or build from the ground up, Pete has the technical and creative expertise and connections to complete any website on time\n' +
-        'and under budget.',
+    bio:
+      'Pete has two decades of web development experience under his belt. Encompassing a wide array of verticals spanning everything from non profits to enterprise e-commerce, he builds solutions that are accessible, performant, client-driven, and user-focused. Whether you need to fine tune an existing website or build from the ground up, Pete has the technical and creative expertise and connections to complete any website on time\n' +
+      'and under budget.',
     linkedinUrl: 'https://www.linkedin.com/in/pete-croke/',
   },
 ]
@@ -55,131 +64,148 @@ export default function Team() {
   const [open, setOpen] = useState(false)
   const [bio, setBio] = useState('')
   const [name, setName] = useState('')
-  function configModal(thebio, thename){
+  function configModal(thebio, thename) {
     setBio(thebio)
     setName(thename)
     setOpen(true)
   }
 
   return (
-      <section
-          id="team"
-          className="relative overflow-hidden py-20"
-      >
-        <Container>
-          <div className="bg-white">
+    <section id="team" className="relative overflow-hidden py-20">
+      <Container>
+        <div className="bg-white">
           <div className="mx-auto max-w-7xl">
             <div className="space-y-12">
-              <div className="space-y-5 sm:space-y-4 text-center">
-                <h2 className="font-display text-3xl tracking-tight text-croke sm:text-4xl">Our Team</h2>
-                <p className="text-xl max-w-prose text-slate-700 mx-auto">
-                  Varied backgrounds; one goal: your success. This starts by applying common sense - along with uncommon creativity, focus, and empathy - to every project.
+              <div className="space-y-5 text-center sm:space-y-4">
+                <h2 className="font-display text-3xl tracking-tight text-croke sm:text-4xl">
+                  Our Team
+                </h2>
+                <p className="mx-auto max-w-prose text-xl text-slate-700">
+                  Varied backgrounds; one goal: your success. This starts by
+                  applying common sense - along with uncommon creativity, focus,
+                  and empathy - to every project.
                 </p>
               </div>
               <ul
-                  role="list"
-                  className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-5 lg:gap-x-8 "
+                role="list"
+                className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-5 lg:gap-x-8 "
               >
                 {people.map((person) => (
-                    <li key={person.name}>
-                      <div className="space-y-4">
-                        <div className="aspect-w-1 aspect-h-1 md:aspect-w-9 md:aspect-h-16">
-                          <Image
-                              src={person.imageUrl.src}
-                              layout="fill"
-                              objectFit="cover" // change to suit your needs
-                              className="object-top rounded-md md:object-center shadow-lg cursor-pointer grayscale hover:grayscale-0"
-                              alt={person.name}
-                              onClick={() => configModal(person.bio, person.name)}
-                          />
-                        </div>
+                  <li key={person.name}>
+                    <div className="space-y-4">
+                      <div className="aspect-w-1 aspect-h-1 md:aspect-w-9 md:aspect-h-16">
+                        <Image
+                          src={person.imageUrl.src}
+                          layout="fill"
+                          objectFit="cover" // change to suit your needs
+                          className="cursor-pointer rounded-md object-top shadow-lg grayscale hover:grayscale-0 md:object-center"
+                          alt={person.name}
+                          onClick={() => configModal(person.bio, person.name)}
+                        />
+                      </div>
 
-                        <div className="space-y-2">
-                          <div className="space-y-1">
-                            <div className="flex justify-between">
-                              <h3 className="text-slate-700 text-md text-base">{person.name}</h3>
-                              <div>
-                                <a href={person.linkedinUrl} target="_blank" className="text-croke hover:text-croke-300">
-                                  <span className="sr-only">LinkedIn</span>
-                                  <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        fillRule="evenodd"
-                                        d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                                        clipRule="evenodd"
-                                    />
-                                  </svg>
-                                </a>
-                              </div>
+                      <div className="space-y-2">
+                        <div className="space-y-1">
+                          <div className="flex justify-between">
+                            <h3 className="text-md text-base text-slate-700">
+                              {person.name}
+                            </h3>
+                            <div>
+                              <a
+                                href={person.linkedinUrl}
+                                target="_blank"
+                                className="text-croke hover:text-croke-300"
+                              >
+                                <span className="sr-only">LinkedIn</span>
+                                <svg
+                                  className="h-5 w-5"
+                                  aria-hidden="true"
+                                  fill="currentColor"
+                                  viewBox="0 0 20 20"
+                                >
+                                  <path
+                                    fillRule="evenodd"
+                                    d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                                    clipRule="evenodd"
+                                  />
+                                </svg>
+                              </a>
                             </div>
-                            <p className="font-display text-md tracking-tight text-croke">{person.role}</p>
                           </div>
+                          <p className="text-md font-display tracking-tight text-croke">
+                            {person.role}
+                          </p>
                         </div>
                       </div>
-                    </li>
+                    </div>
+                  </li>
                 ))}
               </ul>
             </div>
           </div>
         </div>
-        </Container>
+      </Container>
 
-        <Transition.Root show={open} as={Fragment}>
-          <Dialog as="div" className="relative z-10" onClose={setOpen}>
-            <Transition.Child
+      <Transition.Root show={open} as={Fragment}>
+        <Dialog as="div" className="relative z-10" onClose={setOpen}>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+          </Transition.Child>
+
+          <div className="fixed inset-0 z-10 overflow-y-auto">
+            <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+              <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
-                enterFrom="opacity-0"
-                enterTo="opacity-100"
+                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                enterTo="opacity-100 translate-y-0 sm:scale-100"
                 leave="ease-in duration-200"
-                leaveFrom="opacity-100"
-                leaveTo="opacity-0"
-            >
-              <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
-            </Transition.Child>
-
-            <div className="fixed inset-0 z-10 overflow-y-auto">
-              <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-                <Transition.Child
-                    as={Fragment}
-                    enter="ease-out duration-300"
-                    enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                    enterTo="opacity-100 translate-y-0 sm:scale-100"
-                    leave="ease-in duration-200"
-                    leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-                    leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                >
-                  <Dialog.Panel className="relative transform overflow-hidden rounded-md bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
-                    <div>
-                      <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-croke">
-                        <UserIcon className="h-6 w-6 text-white" aria-hidden="true" />
-                      </div>
-                      <div className="mt-3 text-center sm:mt-5">
-                        <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900">
-                          {name}
-                        </Dialog.Title>
-                        <div className="mt-2">
-                          <p className="text-sm text-gray-500">
-                            {bio}
-                          </p>
-                        </div>
-                      </div>
+                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              >
+                <Dialog.Panel className="relative transform overflow-hidden rounded-md bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
+                  <div>
+                    <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-croke">
+                      <UserIcon
+                        className="h-6 w-6 text-white"
+                        aria-hidden="true"
+                      />
                     </div>
-                    <div className="mt-5 sm:mt-6">
-                      <button
-                          type="button"
-                          className="inline-flex w-full justify-center rounded-md border border-transparent bg-croke-300 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-croke-600 focus:outline-none focus:ring-0 sm:text-sm"
-                          onClick={() => setOpen(false)}
+                    <div className="mt-3 text-center sm:mt-5">
+                      <Dialog.Title
+                        as="h3"
+                        className="text-lg font-medium leading-6 text-gray-900"
                       >
-                        Close
-                      </button>
+                        {name}
+                      </Dialog.Title>
+                      <div className="mt-2">
+                        <p className="text-sm text-gray-500">{bio}</p>
+                      </div>
                     </div>
-                  </Dialog.Panel>
-                </Transition.Child>
-              </div>
+                  </div>
+                  <div className="mt-5 sm:mt-6">
+                    <button
+                      type="button"
+                      className="inline-flex w-full justify-center rounded-md border border-transparent bg-croke-300 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-croke-600 focus:outline-none focus:ring-0 sm:text-sm"
+                      onClick={() => setOpen(false)}
+                    >
+                      Close
+                    </button>
+                  </div>
+                </Dialog.Panel>
+              </Transition.Child>
             </div>
-          </Dialog>
-        </Transition.Root>
-      </section>
-
+          </div>
+        </Dialog>
+      </Transition.Root>
+    </section>
   )
 }
