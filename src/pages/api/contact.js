@@ -5,7 +5,7 @@ export default function (req, res) {
   const smtpConfig = {
     host: process.env.MAIL_HOST,
     port: process.env.MAIL_PORT,
-    secure: false, // use SSL
+    secure: true, // use SSL
     auth: {
       user: process.env.MAIL_USER,
       pass: process.env.MAIL_PASS,
@@ -32,9 +32,6 @@ export default function (req, res) {
         req.body.firstname +
         ' ' +
         req.body.lastname,
-      //You can use "html:" to send HTML email content. It's magic!
-      //html: '<b>Wow Big powerful letters</b>',
-      //You can use "text:" to send plain-text content. It's oldschool!
       text:
         'Message: ' +
         req.body.message +
