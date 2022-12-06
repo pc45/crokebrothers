@@ -11,14 +11,14 @@ export function Hero() {
 
   return (
     <Container className="bg-center py-20 px-2 text-center">
-      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium uppercase tracking-tight text-croke sm:text-7xl">
+      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium uppercase tracking-tight text-croke-400 text-croke sm:text-7xl">
         Croke{' '}
         <span className="relative whitespace-nowrap text-croke-300">
           <span className="relative">&amp;</span>
         </span>{' '}
         Company
       </h1>
-      <h2 className=" mx-auto mt-6 max-w-3xl text-2xl text-lg font-bold italic tracking-tight text-slate-700">
+      <h2 className=" mx-auto mt-6 max-w-3xl text-2xl text-lg font-bold italic tracking-tight text-croke-400">
         Powerful Insight + Persuasive Content in the Public Interest
       </h2>
       <div className="mt-10 flex justify-center space-x-6">
