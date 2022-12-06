@@ -82,7 +82,7 @@ export function Hero() {
             </div>
           ) : null}
         </button>
-        <ButtonLink href="#contact" className="bg-croke-300">
+        <ButtonLink href="#contact" className="bg-croke-300 hover:bg-croke-600">
           Work with us
         </ButtonLink>
       </div>
