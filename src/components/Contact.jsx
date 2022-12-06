@@ -69,10 +69,9 @@ export default function Contact() {
     >
       <Container>
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-lg font-semibold text-croke-100">Get Started</h2>
-          <p className="font-display text-3xl tracking-tight text-white sm:text-4xl">
+          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
             Let's Collaborate! <br />
-          </p>
+          </h2>
 
           <p className="mt-6 font-display text-xl tracking-tight text-white sm:text-xl">
             You can also{' '}
@@ -110,6 +109,7 @@ export default function Contact() {
                 }).then((res) => {
                   if (res.status === 200) {
                     setSubmitted(data)
+                    //history.pushState(null, null, '/#contact')
                   }
                 })
               })}

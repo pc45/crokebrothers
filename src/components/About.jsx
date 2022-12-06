@@ -6,9 +6,9 @@ export function About() {
     <section id="about" className="relative overflow-hidden py-20">
       <Container className="relative">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="font-display text-3xl tracking-tight text-croke sm:text-4xl">
+          <h2 className="font-display text-3xl tracking-tight text-croke sm:text-4xl">
             About Us
-          </p>
+          </h2>
           <p className=" mt-4 text-lg tracking-tight text-slate-700">
             Croke & Company is a strategic communications firm dedicated to the
             public interest and the common good. We cut through nonsense and
