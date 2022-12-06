@@ -46,7 +46,7 @@ const people = [
     name: 'Justin Cajindos',
     role: 'Policy and Strategy',
     imageUrl: justin,
-    bio: 'Justin is a versatile public affairs professional with experience advising federal and state government officeholders, including US Senator Dick Durbin, former Illinois Governor Pat Quinn, Illinois State Treasurer Mike Frerichs, and Oklahoma Senate Minority Leader Kay Floyd. He resides in Oklahoma City with his wife and two children. He has an array of campaign and government experience spanning more than 15 years. Outside of his work Justin studies law and serves on a parent-driven nonprofit board supporting art in public school classrooms.',
+    bio: 'Justin is a versatile public affairs professional and trusted advisor who has served in key roles for federal and state government officeholders, including as an aide to US Senator Dick Durbin, Deputy Chief of Staff to former Illinois Governor Pat Quinn, Chief of Staff to Illinois State Treasurer Mike Frerichs, and Chief of Staff to Oklahoma State Senate Minority Leader Kay Floyd. He resides in Oklahoma City with his wife and two children. He has an array of campaign and government experience spanning more than 15 years. Outside of his work Justin studies law and serves on a parent-driven nonprofit board supporting art in public school classrooms.',
     linkedinUrl: 'https://www.linkedin.com/in/justin-cajindos-22766322/',
   },
   {
