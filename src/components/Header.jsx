@@ -68,12 +68,16 @@ function MobileNavigation() {
                 </li>
                 <li>
                   <Link href="#team">
-                    <a className="block w-full" onClick={() => close()}>Our Team</a>
+                    <a className="block w-full" onClick={() => close()}>
+                      Our Team
+                    </a>
                   </Link>
                 </li>
                 <li>
                   <Link href="#contact">
-                    <a className="block w-full" onClick={() => close()}>Work With Us</a>
+                    <a className="block w-full" onClick={() => close()}>
+                      Work With Us
+                    </a>
                   </Link>
                 </li>
                 <li>
@@ -85,18 +89,23 @@ function MobileNavigation() {
                 </li>
                 <li>
                   <a href="tel:636-336-2428" className="flex items-center">
-                    <PhoneIcon className="h-6 w-6 flex-shrink-0" aria-hidden="true" />
-                    <span className="ml-3">
-                    636-336-2428
-                  </span>
+                    <PhoneIcon
+                      className="h-6 w-6 flex-shrink-0"
+                      aria-hidden="true"
+                    />
+                    <span className="ml-3">636-336-2428</span>
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:team@crokeandco.com" className="flex items-center">
-                    <EnvelopeIcon className="h-6 w-6 flex-shrink-0" aria-hidden="true" />
-                    <span className="ml-3">
-                    team@crokeandco.com
-                  </span>
+                  <a
+                    href="mailto:team@crokeandco.com"
+                    className="flex items-center"
+                  >
+                    <EnvelopeIcon
+                      className="h-6 w-6 flex-shrink-0"
+                      aria-hidden="true"
+                    />
+                    <span className="ml-3">team@crokeandco.com</span>
                   </a>
                 </li>
               </Popover.Panel>
@@ -111,9 +120,9 @@ function MobileNavigation() {
 export function Header() {
   return (
     <header className="bg-croke">
-      <Container className="flex justify-between items-center">
-        <nav className="relative z-50 text-sm flex">
-          <ul className="flex items-center">
+      <Container className="flex items-center justify-between">
+        <nav className="relative z-50 flex w-full text-sm md:w-auto">
+          <ul className="flex w-full items-center md:w-auto">
             <li>
               <Link href="#">
                 <a>
@@ -124,58 +133,66 @@ export function Header() {
             </li>
             <li className="ml-12 hidden md:block">
               <Link href="#services">
-                <a className="font-display tracking-tight font-bold text-lg rounded-md p-1 text-white hover:bg-croke-200 hover:text-slate-900">
+                <a className="rounded-md p-1 font-display text-lg font-bold tracking-tight text-white hover:bg-croke-200 hover:text-slate-900">
                   Services
                 </a>
               </Link>
             </li>
             <li className="ml-4 hidden md:block ">
               <Link href="#team">
-                <a className="font-display tracking-tight font-bold text-lg rounded-md p-1 text-white hover:bg-croke-200 hover:text-slate-900">
+                <a className="rounded-md p-1 font-display text-lg font-bold tracking-tight text-white hover:bg-croke-200 hover:text-slate-900">
                   Our Team
                 </a>
               </Link>
             </li>
             <li className="ml-4 hidden md:block ">
               <Link href="#contact">
-                <a className="font-display tracking-tight font-bold text-lg rounded-md p-1 text-white hover:bg-croke-200 hover:text-slate-900">
+                <a className="rounded-md p-1 font-display text-lg font-bold tracking-tight text-white hover:bg-croke-200 hover:text-slate-900">
                   Work With Us
                 </a>
               </Link>
             </li>
             <li className="ml-4 hidden md:block">
               <Link href="#about">
-                <a className="font-display tracking-tight font-bold text-lg rounded-md p-1 text-white hover:bg-croke-200 hover:text-slate-900">
+                <a className="rounded-md p-1 font-display text-lg font-bold tracking-tight text-white hover:bg-croke-200 hover:text-slate-900">
                   About
                 </a>
               </Link>
             </li>
-            <li className="ml-48 -mr-1 md:hidden">
+            <li className="ml-auto -mr-1 md:hidden">
               <MobileNavigation />
             </li>
           </ul>
         </nav>
         <div className="hidden md:flex">
-          <dl className="text-base tracking-tight font-display text-white flex justify-items-end space-x-4">
+          <dl className="flex justify-items-end space-x-4 font-display text-base tracking-tight text-white">
             <div>
               <dt className="sr-only">Phone number</dt>
               <dd className="hover:text-croke-300">
-                <a href="tel:636-336-2428" className="flex justify-center items-center">
-                  <PhoneIcon className="h-4 w-4 flex-shrink-0" aria-hidden="true" />
-                  <span className="ml-3">
-                    636-336-2428
-                  </span>
+                <a
+                  href="tel:636-336-2428"
+                  className="flex items-center justify-center"
+                >
+                  <PhoneIcon
+                    className="h-4 w-4 flex-shrink-0"
+                    aria-hidden="true"
+                  />
+                  <span className="ml-3">636-336-2428</span>
                 </a>
               </dd>
             </div>
             <div>
               <dt className="sr-only">Email</dt>
               <dd className="hover:text-croke-300">
-                <a href="mailto:team@crokeandco.com" className="flex justify-center items-center">
-                  <EnvelopeIcon className="h-4 w-4 flex-shrink-0" aria-hidden="true" />
-                  <span className="ml-3">
-                    team@crokeandco.com
-                  </span>
+                <a
+                  href="mailto:team@crokeandco.com"
+                  className="flex items-center justify-center"
+                >
+                  <EnvelopeIcon
+                    className="h-4 w-4 flex-shrink-0"
+                    aria-hidden="true"
+                  />
+                  <span className="ml-3">team@crokeandco.com</span>
                 </a>
               </dd>
             </div>
