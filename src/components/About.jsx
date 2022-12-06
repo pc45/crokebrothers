@@ -6,9 +6,8 @@ export function About() {
     <section id="about" className="relative overflow-hidden py-20">
       <Container className="relative">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-lg font-semibold text-croke-100">Who we are</h2>
           <p className="font-display text-3xl tracking-tight text-croke sm:text-4xl">
-            About
+            About Us
           </p>
           <p className=" mt-4 text-lg tracking-tight text-slate-700">
             Croke & Company is a strategic communications firm dedicated to the
@@ -19,16 +18,6 @@ export function About() {
             shared expertise to help build a better, safer, more inclusive
             world.
           </p>
-          <div className="aspect-w-16 aspect-h-9 mt-12">
-            <iframe
-              title="vimeo-player"
-              src="https://player.vimeo.com/video/776358925?h=c94d54bdfd"
-              width="640"
-              height="360"
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
-          </div>
         </div>
       </Container>
     </section>
