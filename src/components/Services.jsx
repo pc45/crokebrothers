@@ -24,7 +24,7 @@ const features = [
   {
     name: 'Polling & Policy Research',
     description:
-      'We design, conduct, and synthesize survey research to inform your mission and nourish your need for prompt, precise, compelling facts. We share results and analysis in plain language to help you make smart, data-driven decisions. We can also use this work to strengthen grant applications and pitches. Public Policy subject matter expertise includes: Health and Human Services; Public Infrastructure; Economic and Community Development, Higher Education; Labor Relations; Safety and Emergency Response.',
+      'We design, conduct, and synthesize survey research to inform your mission and nourish your need for prompt, precise, compelling facts. We share results and analysis in plain language to help you make smart, data-driven decisions. We can also use this work to strengthen grant applications and pitches. Public Policy subject matter expertise includes: Health and Human Services; Public Infrastructure; Capital Construction; Economic and Community Development, Higher Education; Labor Relations; Energy; Environment; Agriculture; Safety and Emergency Response.',
     icon: ChartBarIcon,
   },
 ]

@@ -1,11 +1,10 @@
 import nodemailer from 'nodemailer'
-import _ from 'lodash'
 
 export default function (req, res) {
   const smtpConfig = {
     host: process.env.MAIL_HOST,
     port: process.env.MAIL_PORT,
-    secure: true, // use SSL
+    secure: false, // use SSL
     auth: {
       user: process.env.MAIL_USER,
       pass: process.env.MAIL_PASS,
@@ -21,7 +20,7 @@ export default function (req, res) {
       ? console.log(err)
       : console.log(`=== Server is ready to take messages: ${success} ===`)
   })
-  const services = _.compact(req.body.serviceInfo)
+  const services = _.compact(eq.body.serviceInfo)
 
   nodemailerMailgun.sendMail(
     {
@@ -32,6 +31,9 @@ export default function (req, res) {
         req.body.firstname +
         ' ' +
         req.body.lastname,
+      //You can use "html:" to send HTML email content. It's magic!
+      //html: '<b>Wow Big powerful letters</b>',
+      //You can use "text:" to send plain-text content. It's oldschool!
       text:
         'Message: ' +
         req.body.message +

@@ -3,13 +3,12 @@ import { Container } from '@/components/Container'
 import { useForm, useController } from 'react-hook-form'
 
 const services = [
-  { id: 1, name: 'Strategic Communication' },
-  { id: 2, name: 'Crisis Communication' },
+  { id: 2, name: 'Policy Research' },
   { id: 3, name: 'PR' },
   { id: 4, name: 'Video Production' },
   { id: 5, name: 'Web Development' },
-  { id: 6, name: 'Polling' },
-  { id: 7, name: 'Policy Research' },
+  { id: 6, name: 'Polling Strategic Planning' },
+  { id: 7, name: 'Crisis Advice' },
   { id: 8, name: 'Something else' },
 ]
 
@@ -109,7 +108,6 @@ export default function Contact() {
                 }).then((res) => {
                   if (res.status === 200) {
                     setSubmitted(data)
-                    //history.pushState(null, null, '/#contact')
                   }
                 })
               })}
