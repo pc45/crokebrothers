@@ -3,11 +3,12 @@ import { Container } from '@/components/Container'
 import { useForm, useController } from 'react-hook-form'
 
 const services = [
-  { id: 2, name: 'Policy Research' },
-  { id: 3, name: 'PR' },
-  { id: 4, name: 'Video Production' },
-  { id: 5, name: 'Web Development' },
-  { id: 6, name: 'Polling Strategic Planning' },
+  { id: 1, name: 'Policy Research' },
+  { id: 2, name: 'PR' },
+  { id: 3, name: 'Video Production' },
+  { id: 4, name: 'Web Development' },
+  { id: 5, name: 'Polling' },
+  { id: 6, name: 'Strategic Planning' },
   { id: 7, name: 'Crisis Advice' },
   { id: 8, name: 'Something else' },
 ]
@@ -204,7 +205,7 @@ export default function Contact() {
                       </label>
                       <div className="mt-1 mt-1 flex justify-center">
                         <fieldset>
-                          <div className="mt-4 grid grid-cols-2 gap-2 text-white md:grid-cols-4 ">
+                          <div className="mt-4 grid grid-cols-2 gap-x-8 gap-y-4 text-white md:grid-cols-4 ">
                             <Checkboxes
                               services={services}
                               control={control}

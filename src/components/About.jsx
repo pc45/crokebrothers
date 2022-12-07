@@ -11,7 +11,7 @@ export function About() {
           </h2>
           <p className=" mt-4 text-lg tracking-tight text-slate-700">
             Croke & Company is a strategic communications firm that offers video
-            production, web design, polling and research to organizations and
+            production, web design, polling, and research to organizations and
             individuals who are dedicated to the public interest and the common
             good. We are specially equipped to help progressive causes,
             companies, and campaigns thrive. We cut through nonsense and noise -
