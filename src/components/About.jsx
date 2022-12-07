@@ -17,10 +17,9 @@ export function About() {
             companies, and campaigns thrive. We cut through nonsense and noise -
             to widen your reach, amplify your success, and prepare you to
             navigate any public challenge. We believe in using plain language,
-            elegant design, and humor to support our partners. We loathe
-            gobbledygook and rip-offs, and will not subject those we work with
-            to either. Our goal is to harness shared expertise to help build a
-            better, safer, more inclusive world.
+            elegant design, and humor to support our partners. Our goal is to
+            harness shared expertise to help build a better, safer, more
+            inclusive world.
           </p>
         </div>
       </Container>
