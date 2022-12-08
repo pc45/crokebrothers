@@ -1,39 +1,37 @@
-import nodemailer from 'nodemailer'
+'use strict'
+
+let nodemailer = require('nodemailer')
+let lodash = require('lodash')
+
+let aws = require('@aws-sdk/client-ses')
 
 export default function (req, res) {
-  const smtpConfig = {
-    host: process.env.MAIL_HOST,
-    port: process.env.MAIL_PORT,
-    secure: false, // use SSL
-    auth: {
-      user: process.env.MAIL_USER,
-      pass: process.env.MAIL_PASS,
+  const AWS_ACCESS_KEY_ID = process.env.AWS_ACCESS_KEY
+  const AWS_SECRET_ACCESS_KEY = process.env.AWS_SECRET_ACCESS_KEY
+  const FROM_ADDRESS = 'no-reply@crokeandco.com'
+  const TO_ADDRESS = process.env.MAIL_RECIPIENTS
+  const services = lodash.compact(req.body.serviceInfo)
+
+  const ses = new aws.SES({
+    apiVersion: '2010-12-01',
+    region: 'us-east-1',
+    credentials: {
+      secretAccessKey: AWS_SECRET_ACCESS_KEY,
+      accessKeyId: AWS_ACCESS_KEY_ID,
     },
-  }
-
-  const nodemailerMailgun = nodemailer.createTransport(smtpConfig)
-
-  const recipients = process.env.MAIL_RECIPIENTS
-
-  nodemailerMailgun.verify((err, success) => {
-    err
-      ? console.log(err)
-      : console.log(`=== Server is ready to take messages: ${success} ===`)
   })
-  const services = _.compact(eq.body.serviceInfo)
 
-  nodemailerMailgun.sendMail(
+  // create Nodemailer SES transporter
+  let transporter = nodemailer.createTransport({
+    SES: { ses, aws },
+  })
+
+  // send some mail
+  transporter.sendMail(
     {
-      from: req.body.email,
-      to: recipients.split(', '), // An array if you have multiple recipients.
-      subject:
-        'Contact Us Inquiry on crokeand.co from ' +
-        req.body.firstname +
-        ' ' +
-        req.body.lastname,
-      //You can use "html:" to send HTML email content. It's magic!
-      //html: '<b>Wow Big powerful letters</b>',
-      //You can use "text:" to send plain-text content. It's oldschool!
+      from: FROM_ADDRESS,
+      to: TO_ADDRESS,
+      subject: 'Contact Us Inquiry on crokeand.co from ' + req.body.name,
       text:
         'Message: ' +
         req.body.message +
@@ -43,16 +41,12 @@ export default function (req, res) {
         '\n\n' +
         'Interested in: ' +
         services,
+      ses: {},
     },
     (err, info) => {
-      if (err) {
-        console.log(`Error: ${err}`)
-      } else {
-        console.log(`Response: ${info}`)
-      }
+      //console.log(err || info)
     }
   )
-
   res.status(200)
   res.send()
 }

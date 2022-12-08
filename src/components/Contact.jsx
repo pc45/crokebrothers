@@ -116,20 +116,20 @@ export default function Contact() {
               <div className="space-y-8 divide-y divide-white">
                 <div className="pt-8">
                   <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
-                    <div className="sm:col-span-3">
+                    <div className="sm:col-span-2">
                       <label
-                        htmlFor="firstname"
+                        htmlFor="name"
                         className="block text-sm font-medium text-white"
                       >
-                        First name
+                        Name
                       </label>
                       <div className="mt-1">
                         <input
                           type="text"
-                          {...register('firstname', {
-                            required: 'First name is required',
+                          {...register('name', {
+                            required: 'Name is required',
                           })}
-                          id="firstname"
+                          id="name"
                           className="block w-full rounded-md border-croke shadow-sm focus:border-croke-200 focus:ring-croke-200 sm:text-sm"
                         />
                         <p className="mt-2 rounded-md text-left text-xs font-bold font-medium text-croke-300">
@@ -138,28 +138,7 @@ export default function Contact() {
                         </p>
                       </div>
                     </div>
-                    <div className="sm:col-span-3">
-                      <label
-                        htmlFor="lastname"
-                        className="block text-sm font-medium text-white"
-                      >
-                        Last name
-                      </label>
-                      <div className="mt-1">
-                        <input
-                          type="text"
-                          {...register('lastname', {
-                            required: 'Last Name is required',
-                          })}
-                          id="lastname"
-                          className="block w-full rounded-md border-croke shadow-sm focus:border-croke-200 focus:ring-croke-200 sm:text-sm"
-                        />
-                        <p className="mt-2 rounded-md text-left text-xs font-bold font-medium text-croke-300">
-                          {errors.lastname?.message}
-                        </p>
-                      </div>
-                    </div>
-                    <div className="sm:col-span-3">
+                    <div className="sm:col-span-2">
                       <label
                         htmlFor="email"
                         className="block text-sm font-medium text-white"
@@ -180,7 +159,7 @@ export default function Contact() {
                         </p>
                       </div>
                     </div>
-                    <div className="sm:col-span-3">
+                    <div className="sm:col-span-2">
                       <label
                         htmlFor="phone"
                         className="block text-sm font-medium text-white"
@@ -196,7 +175,7 @@ export default function Contact() {
                         />
                       </div>
                     </div>
-                    <div className="sm:col-span-6">
+                    <div className="mt-4 sm:col-span-6">
                       <label
                         htmlFor="about"
                         className="block text-sm font-medium text-white"
@@ -215,7 +194,7 @@ export default function Contact() {
                         </fieldset>
                       </div>
                     </div>
-                    <div className="sm:col-span-6">
+                    <div className="mt-4 sm:col-span-6">
                       <label
                         htmlFor="message"
                         className="block text-sm font-medium text-white"
