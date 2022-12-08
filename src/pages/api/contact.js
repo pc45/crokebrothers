@@ -16,8 +16,8 @@ export default function (req, res) {
     apiVersion: '2010-12-01',
     region: 'us-east-1',
     credentials: {
-      secretAccessKey: AWS_SECRET_ACCESS_KEY,
-      accessKeyId: AWS_ACCESS_KEY_ID,
+      secretAccessKey: CB_AWS_SECRET_ACCESS_KEY,
+      accessKeyId: CB_AWS_ACCESS_KEY_ID,
     },
   })
 
