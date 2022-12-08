@@ -24,6 +24,9 @@ export default function (req, res) {
   // create Nodemailer SES transporter
   let transporter = nodemailer.createTransport({
     SES: { ses, aws },
+    host: 'email-smtp.us-east-1.amazonaws.com',
+    port: 587,
+    secure: true,
   })
 
   // send some mail
