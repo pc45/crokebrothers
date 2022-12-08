@@ -134,7 +134,7 @@ export default function Contact() {
                         />
                         <p className="mt-2 rounded-md text-left text-xs font-bold font-medium text-croke-300">
                           {' '}
-                          {errors.firstname?.message}
+                          {errors.name?.message}
                         </p>
                       </div>
                     </div>
